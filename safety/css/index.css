@@ -27,7 +27,11 @@ body {
   overflow: visible;
   flex: 1;
   height: 35vw;
-  transition: flex 0.5s;
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 #article1 .rule:hover {
   flex: 1.5;
@@ -37,8 +41,8 @@ body {
   backdrop-filter: blur(2px);
   border: 1px solid rgba(0, 0, 0, 0.35);
 }
-#article1 .rule:hover .safe .intro {
-  animation: none;
+#article1 .rule:hover .safe ul {
+  display: block;
 }
 #article1 .rule:hover .safe h1 {
   transform: scale(1.3);
@@ -48,21 +52,20 @@ body {
   transform: scale(1.3);
   color: #e91e63;
 }
-#article1 .rule:hover .safe ul {
-  display: block;
-  animation: fadeIn 2s alternate;
-}
 #article1 .rule .safe {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: all 0.5s;
-  width: 100%;
+  position: relative;
 }
 #article1 .rule .safe .intro {
-  animation: flash 2s infinite;
+  animation: ani 1s both 0.5s;
   margin: 20px 0;
+  transform: translateY(-100%);
+  opacity: 0;
+}
+@keyframes ani {
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 #article1 .rule .safe h1 {
   font-weight: 900;
@@ -88,6 +91,9 @@ body {
 }
 #article1 .rule .safe ul {
   display: none;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
   line-height: 1.5;
   color: #fff;
 }
@@ -133,41 +139,42 @@ body {
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
 }
 
-.article2.on {
-  transform: scale(1);
-  opacity: 1;
+.article2 {
+  opacity: 0;
   transition: all 1s;
-  padding: 100px 0;
+  padding: 200px 0;
   background: url(../images/camping9.jpg) no-repeat center top;
   background-size: cover;
   background-attachment: fixed;
   font-family: "Staatliches", cursive;
-  margin-top: 100px;
-  margin: 100px 0;
+  margin: 100px 100px;
   color: #fff;
   text-align: center;
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
-  border-radius: 100% 20%/100% 20%;
+  border-radius: 150px 50%/150px 50%;
 }
-.article2.on p {
+.article2.on {
+  opacity: 1;
+}
+.article2 p {
   font-size: 40px;
   line-height: 2;
   letter-spacing: 5px;
   font-weight: 900;
 }
 @media screen and (max-width:1024px) {
-  .article2.on p {
+  .article2 p {
     font-size: 25px;
   }
 }
-.article2.on h2 {
+.article2 h2 {
   font-size: 30px;
   line-height: 1.5;
   letter-spacing: 10px;
   font-weight: 900;
 }
 @media screen and (max-width:1024px) {
-  .article2.on h2 {
+  .article2 h2 {
     font-size: 20px;
   }
 }
@@ -313,41 +320,43 @@ body {
   width: 50%;
 }
 
-.article4.on {
-  transform: scale(1);
-  opacity: 1;
+.article4 {
+  opacity: 0;
   transition: all 1s;
-  padding: 80px 0;
+  padding: 200px 0;
   margin-bottom: 50px;
   background: url(../images/camping10.jpg) no-repeat center top;
   background-size: cover;
   background-attachment: fixed;
   font-family: "Staatliches", cursive;
-  margin: 100px 0;
+  margin: 100px 100px;
   color: #fff;
   text-align: center;
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
-  border-radius: 20% 100%/20% 100%;
+  border-radius: 50% 150px/50% 150px;
 }
-.article4.on p {
+.article4.on {
+  opacity: 1;
+}
+.article4 p {
   font-size: 40px;
   line-height: 2;
   letter-spacing: 5px;
   font-weight: 900;
 }
 @media screen and (max-width:1024px) {
-  .article4.on p {
+  .article4 p {
     font-size: 25px;
   }
 }
-.article4.on h2 {
+.article4 h2 {
   font-size: 30px;
   line-height: 1.5;
   letter-spacing: 10px;
   font-weight: 900;
 }
 @media screen and (max-width:1024px) {
-  .article4.on h2 {
+  .article4 h2 {
     font-size: 20px;
   }
 }
@@ -423,40 +432,42 @@ body {
   }
 }
 
-.article6.on {
-  transform: scale(1);
-  opacity: 1;
-  transition: all 0.5s;
-  padding: 150px 0;
+.article6 {
+  opacity: 0;
+  transition: all 1s;
+  padding: 200px 0;
   background: url(../images/camping11.jpg) no-repeat center top;
   background-size: cover;
   background-attachment: fixed;
   font-family: "Staatliches", cursive;
-  margin: 100px 0;
+  margin: 100px 100px;
   color: #fff;
   text-align: center;
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
-  border-radius: 100% 20%/100% 20%;
+  border-radius: 150px 50%/150px 50%;
 }
-.article6.on p {
+.article6.on {
+  opacity: 1;
+}
+.article6 p {
   font-size: 40px;
   line-height: 2;
   letter-spacing: 5px;
   font-weight: 900;
 }
 @media screen and (max-width:1024px) {
-  .article6.on p {
+  .article6 p {
     font-size: 25px;
   }
 }
-.article6.on h2 {
+.article6 h2 {
   font-size: 30px;
   line-height: 1.5;
   letter-spacing: 10px;
   font-weight: 900;
 }
 @media screen and (max-width:1024px) {
-  .article6.on h2 {
+  .article6 h2 {
     font-size: 22px;
   }
 }

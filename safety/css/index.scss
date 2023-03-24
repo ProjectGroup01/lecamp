@@ -24,7 +24,9 @@ body{background: #000;}
     overflow: visible;
     flex: 1;
     height: 35vw;
-    transition: flex .5s;
+    transition: all .5s;
+    display:flex; justify-content:center; align-items:center; 
+    overflow:hidden; 
     // animation: flipInY 2s alternate;
     
     &:hover{flex: 1.5;
@@ -34,20 +36,23 @@ body{background: #000;}
         backdrop-filter: blur(2px);
         border: 1px solid rgba(0,0,0,0.35);
      .safe{
-        .intro{ animation: none;}
+        ul{ display:block;  }
         h1{ transform: scale(1.3); color: #e91e63; }
         h2{ transform: scale(1.3); color: #e91e63;}
-        ul{ display: block; animation: fadeIn 2s alternate; }
      }
 
     }
 
 .safe{
-    position: absolute;top: 50%;left:50%;transform: translate(-50%,-50%); 
-    transition: all 0.5s; width: 100%;
+    position:relative; 
     .intro{
-        animation: flash 2s infinite;
-        margin: 20px 0;
+        animation: ani 1s both 0.5s;
+        margin: 20px 0; 
+        transform:translateY(-100%); opacity:0
+    }
+    @keyframes ani {
+        0% {  }
+        100% {  transform:translateY(0); opacity:1 }
     }
     h1{
     font-weight: 900;
@@ -78,7 +83,8 @@ body{background: #000;}
     }  
    
     ul{ 
-        display: none; 
+        display:none; 
+        border:1px solid #fff; border-radius:5px; padding:10px 20px;
         line-height: 1.5; 
         // color: rgb(247, 177, 49);
         color: #fff;
@@ -121,19 +127,19 @@ body{background: #000;}
 
 }
 
-.article2.on{
-    transform: scale(1); opacity: 1; transition: all 1s;
-    padding: 100px 0;
+.article2{
+    opacity: 0; transition: all 1s;
+    padding: 200px 0;
     background: url(../images/camping9.jpg) no-repeat center top;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Staatliches', cursive;
-    margin-top: 100px;
-    margin: 100px 0;
+    margin: 100px 100px;
     color: #fff; text-align: center; 
     text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
       0px -4px 10px rgba(255,255,255,0.3);
-      border-radius: 100% 20% / 100% 20%;
+      border-radius: 150px 50% / 150px 50%;
+    &.on { opacity:1; }  
     p{ font-size: 40px; line-height: 2; letter-spacing: 5px; font-weight: 900;
         @media #{$phone}{ font-size: 25px;}}
     h2{ font-size: 30px;  line-height: 1.5; letter-spacing: 10px; font-weight: 900;
@@ -206,19 +212,20 @@ body{background: #000;}
     }
 }
 
-.article4.on{
-    transform: scale(1); opacity: 1; transition: all 1s;
-    padding: 80px 0;
+.article4{
+    opacity: 0; transition: all 1s;
+    padding: 200px 0;
     margin-bottom: 50px;
     background: url(../images/camping10.jpg) no-repeat center top;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Staatliches', cursive;
-    margin: 100px 0;
+    margin: 100px 100px;
     color: #fff; text-align: center; 
     text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
       0px -4px 10px rgba(255,255,255,0.3);
-    border-radius: 20% 100% / 20% 100%;
+      border-radius: 50% 150px / 50% 150px;
+      &.on { opacity:1; }  
     p{ font-size: 40px; line-height: 2; letter-spacing: 5px; font-weight: 900;
         @media #{$phone}{ font-size: 25px;}}
     h2{ font-size: 30px;  line-height: 1.5; letter-spacing: 10px; font-weight: 900;
@@ -256,18 +263,19 @@ body{background: #000;}
     }
 }
 
-.article6.on{
-    transform: scale(1); opacity: 1; transition: all 0.5s;
-    padding: 150px 0;
+.article6{
+    opacity: 0; transition: all 1s;
+    padding: 200px 0;
     background: url(../images/camping11.jpg) no-repeat center top;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Staatliches', cursive;
-    margin: 100px 0;
+    margin: 100px 100px;
     color: #fff; text-align: center; 
     text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
       0px -4px 10px rgba(255,255,255,0.3);
-    border-radius: 100% 20% / 100% 20%;
+      border-radius: 150px 50% / 150px 50%;
+      &.on { opacity:1; }  
     p{ font-size: 40px; line-height: 2; letter-spacing: 5px; font-weight: 900;
         @media #{$phone}{ font-size: 25px;}}
     h2{ font-size: 30px;  line-height: 1.5; letter-spacing: 10px; font-weight: 900;
