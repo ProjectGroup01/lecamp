@@ -174,7 +174,7 @@ article {
   border-radius: 50px;
   box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
   margin-top: 30px;
-  animation: fadeInDown 0.8s normal;
+  animation: slide-in-top 0.8s normal;
 }
 
 .cont2 .checklist.on {
@@ -287,15 +287,112 @@ article {
   margin-top: 100px;
   margin-bottom: 100px;
   display: none;
-  animation: fadeInDown 0.8s normal;
 }
 .cont2 .result.on {
   display: block;
+  animation: scale-in-ver-top 0.5s normal;
 }
 .cont2 .result h2 {
   text-align: center;
   color: #767676;
   font-size: 30px;
+}
+.cont2 .result .resultbox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.cont2 .result .resultbox .bottomWrap {
+  width: 45%;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 20px rgba(159, 162, 177, 0.8);
+}
+.cont2 .result .resultbox .bottomWrap .resultContents {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+.cont2 .result .resultbox .bottomWrap:first-child .resultContents {
+  background: url(../img/cont2_img1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.cont2 .result .resultbox .bottomWrap:nth-child(2) .resultContents {
+  background: url(../img/cont2_img2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.cont2 .result .resultbox .bottomWrap:nth-child(3) .resultContents {
+  background: url(../img/cont2_img3.jfif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.cont2 .result .resultbox .bottomWrap:nth-child(4) .resultContents {
+  background: url(../img/cont2_img4.jfif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.cont2 .result .resultbox .bottomWrap .contentsBottom {
+  width: 100%;
+  height:250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.cont2 .result .resultbox .bottomWrap .contentsBottom h2 {
+  font-size: 23px;
+  padding-bottom: 20px;
+  color: #bad7e9;
+  margin-top: 30px;
+}
+.cont2 .result .resultbox .bottomWrap .contentsBottom p {
+  color: #767676;
+  font-weight: bold;
+}
+.cont2 .result .resultbox .bottomWrap .contentsBottom a {
+  padding: 15px 30px;
+  border-radius: 5px;
+  background: #3488ce;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 60px;
+  box-shadow: 0 10px 20px rgba(159, 162, 177, 0.5);
+  transition: all 0.2s;
+}
+.cont2 .result .resultbox .bottomWrap .contentsBottom a:hover {
+  background: #878787;
+  transform: scale(1.1);
+}
+.cont2 .result .resultbox .none {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cont2 .result .resultbox .none span {
+  color: #767676;
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.cont2 .result .resultbox .none img {
+  width: 30%;
+  opacity: 0.6;
 }
 
 /* 컨텐츠구역 3 */
@@ -557,4 +654,44 @@ article {
 .animate__fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
+}
+@keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-topp {
+  0% {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }

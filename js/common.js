@@ -147,14 +147,14 @@ $("#btn2").click(function() {
   .done(function (msg) { 
       $('.result .resultbox').remove()
       $( ".result" ).append( `<div class="resultbox"> </div>` );
-      $( ".resultbox" ).css("animation", "fadeInDown 0.6s alternate");
+      $( ".resultbox" ).css("animation", "slide-in-topp 0.8s normal");
       console.log(msg);
       if(msg.documents.length <= 0){
-        $( '.result .resultbox' ).append(`<h2>검색결과가 없습니다.</h2>`)
+        $( '.result .resultbox' ).append(`<div class="none"><span>검색결과가 없습니다</span><img src="../img/cont2_img5.png"></div>`)
       }else {
         for (var i = 0; i < msg.documents.length; i++){
-          $( '.result .resultbox' ).append( `<div class="resultContents"><h2 id="${msg.documents[i].address_name}">${msg.documents[i].place_name}</h2>
-              <p id="${msg.documents[i].address_name}" class="adrs" data-num="${msg.documents[i].phone}" data-url="${msg.documents[i].place_url}" data-value="${msg.documents[i].place_name}">주소 : ${msg.documents[i].address_name}</p></div>`);
+          $( '.result .resultbox' ).append( `<div class="bottomWrap"><div class="resultContents"></div><div class="contentsBottom"><h2 id="${msg.documents[i].address_name}">${msg.documents[i].place_name}</h2>
+          <p id="${msg.documents[i].address_name}" class="adrs" data-num="${msg.documents[i].phone}" data-url="${msg.documents[i].place_url}" data-value="${msg.documents[i].place_name}">${msg.documents[i].address_name}</p><a href="${msg.documents[i].place_url}">상세페이지로 바로가기</a></div></div>`);
           }
       }
   });
