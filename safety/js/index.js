@@ -10,9 +10,46 @@ $(window).on('load', function(){
   });
 
 
-// article4 이미지 클릭하면 모달창에서 크게 보기
+//스크롤 이벤트 
 
-$('.article4 .movie .img img').on('click', function(){
+//article2, article4, article6 부분
+
+let article2Near = $('.article2').offset().top - $(window).height()/2
+
+let article4Near = $('.article4').offset().top - $(window).height()/2
+
+let article6Near = $('.article6').offset().top - $(window).height()/2
+
+
+$(window).on('scroll', function(){
+   let sct =  $(this).scrollTop()
+   if(sct >= article2Near){
+    $('.article2').addClass('on')
+   }else{
+    $('.article2').removeClass('on')
+   }
+
+
+   if(sct >= article4Near){
+    $('.article4').addClass('on')
+   }else{
+    $('.article4').removeClass('on')
+   }
+
+
+   if(sct >= article6Near){
+    $('.article6').addClass('on')
+   }else{
+    $('.article6').removeClass('on')
+   }
+
+});
+
+
+
+// article5 이미지 클릭하면 모달창에서 크게 보기
+
+$('.article5 .movie .img img').on('click', function(){
     let src = $(this).attr('data-src')
     let modal = '<div class="modal">'
     modal += `<div class="imgbox">`
@@ -53,6 +90,7 @@ $('.article4 .movie .img img').on('click', function(){
             transform:'translate(-50%, -60%)'
          })
      } 
+
     //else if( window.innerWidth < 768){
     //     $('.modal .imgbox').css({
     //         position:'absolute',
@@ -86,4 +124,6 @@ $('.article4 .movie .img img').on('click', function(){
 $('body').on('click', '.modal button, .modal', function(){
     $('.modal').remove()
 })
+
+
 

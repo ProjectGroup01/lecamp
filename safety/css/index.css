@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dokdo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hahmlet&display=swap");
 * {
   margin: 0 auto;
+}
+
+section {
+  font-family: "Hahmlet", serif;
 }
 
 body {
@@ -13,7 +18,7 @@ body {
   display: flex;
   text-align: center;
   margin: 100px auto;
-  padding: 50px 0;
+  padding: 100px 0;
   color: #fff;
 }
 #article1 .rule {
@@ -21,7 +26,7 @@ body {
   z-index: 21;
   overflow: visible;
   flex: 1;
-  height: 37vw;
+  height: 35vw;
   transition: flex 0.5s;
 }
 #article1 .rule:hover {
@@ -36,11 +41,11 @@ body {
   animation: none;
 }
 #article1 .rule:hover .safe h1 {
-  transform: scale(1.5);
+  transform: scale(1.3);
   color: #e91e63;
 }
 #article1 .rule:hover .safe h2 {
-  transform: scale(1.5);
+  transform: scale(1.3);
   color: #e91e63;
 }
 #article1 .rule:hover .safe ul {
@@ -61,7 +66,7 @@ body {
 }
 #article1 .rule .safe h1 {
   font-weight: 900;
-  font-size: 45px;
+  font-size: 40px;
   line-height: 2em;
   margin: 5px;
   font-family: HWTArtz;
@@ -72,7 +77,7 @@ body {
 }
 #article1 .rule .safe h2 {
   font-weight: 900;
-  font-size: 20spx;
+  font-size: 20px;
   margin: 10px;
   line-height: 2em;
   font-family: HWTArtz;
@@ -88,7 +93,7 @@ body {
 }
 #article1 .rule .safe ul strong {
   color: red;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 700;
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
 }
@@ -97,7 +102,7 @@ body {
   background-size: cover;
 }
 #article1 .rule1 li {
-  font-size: 20px;
+  font-size: 17px;
   padding: 15px 0;
   font-weight: 600;
   line-height: 2;
@@ -109,7 +114,7 @@ body {
   background-size: cover;
 }
 #article1 .rule2 li {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
   letter-spacing: 3px;
   line-height: 2;
@@ -120,7 +125,7 @@ body {
   background-size: cover;
 }
 #article1 .rule3 li {
-  font-size: 20px;
+  font-size: 17px;
   padding: 6px 0;
   letter-spacing: 4px;
   font-weight: 600;
@@ -128,7 +133,10 @@ body {
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
 }
 
-#article2 {
+.article2.on {
+  transform: scale(1);
+  opacity: 1;
+  transition: all 1s;
   padding: 100px 0;
   background: url(../images/camping9.jpg) no-repeat center top;
   background-size: cover;
@@ -141,25 +149,25 @@ body {
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
   border-radius: 100% 20%/100% 20%;
 }
-#article2 p {
+.article2.on p {
   font-size: 40px;
   line-height: 2;
   letter-spacing: 5px;
   font-weight: 900;
 }
 @media screen and (max-width:1024px) {
-  #article2 p {
+  .article2.on p {
     font-size: 25px;
   }
 }
-#article2 h2 {
+.article2.on h2 {
   font-size: 30px;
   line-height: 1.5;
   letter-spacing: 10px;
   font-weight: 900;
 }
 @media screen and (max-width:1024px) {
-  #article2 h2 {
+  .article2.on h2 {
     font-size: 20px;
   }
 }
@@ -290,7 +298,7 @@ body {
 }
 #article3 .list li .box p {
   line-height: 1.5;
-  font-weight: 600;
+  font-weight: 700;
   padding: 10px 0;
   font-size: 16px;
   font-weight: 600;
@@ -305,7 +313,10 @@ body {
   width: 50%;
 }
 
-#article4 {
+.article4.on {
+  transform: scale(1);
+  opacity: 1;
+  transition: all 1s;
   padding: 80px 0;
   margin-bottom: 50px;
   background: url(../images/camping10.jpg) no-repeat center top;
@@ -318,25 +329,25 @@ body {
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
   border-radius: 20% 100%/20% 100%;
 }
-#article4 p {
+.article4.on p {
   font-size: 40px;
   line-height: 2;
   letter-spacing: 5px;
   font-weight: 900;
 }
 @media screen and (max-width:1024px) {
-  #article4 p {
+  .article4.on p {
     font-size: 25px;
   }
 }
-#article4 h2 {
+.article4.on h2 {
   font-size: 30px;
   line-height: 1.5;
   letter-spacing: 10px;
   font-weight: 900;
 }
 @media screen and (max-width:1024px) {
-  #article4 h2 {
+  .article4.on h2 {
     font-size: 20px;
   }
 }
@@ -412,7 +423,10 @@ body {
   }
 }
 
-#article6 {
+.article6.on {
+  transform: scale(1);
+  opacity: 1;
+  transition: all 0.5s;
   padding: 150px 0;
   background: url(../images/camping11.jpg) no-repeat center top;
   background-size: cover;
@@ -424,25 +438,25 @@ body {
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
   border-radius: 100% 20%/100% 20%;
 }
-#article6 p {
+.article6.on p {
   font-size: 40px;
   line-height: 2;
   letter-spacing: 5px;
   font-weight: 900;
 }
 @media screen and (max-width:1024px) {
-  #article6 p {
+  .article6.on p {
     font-size: 25px;
   }
 }
-#article6 h2 {
+.article6.on h2 {
   font-size: 30px;
   line-height: 1.5;
   letter-spacing: 10px;
   font-weight: 900;
 }
 @media screen and (max-width:1024px) {
-  #article6 h2 {
+  .article6.on h2 {
     font-size: 22px;
   }
 }

@@ -1,20 +1,21 @@
 $phone: "screen and (max-width:1024px)"; 
-// @import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@500&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dokdo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet&display=swap');
 
 // @media #{$phone}{ }
 
 *{ margin: 0 auto;}
 
+section { font-family: 'Hahmlet', serif;}
 
 body{background: #000;}
 
 #article1{
     display: flex; text-align:center;
     margin: 100px auto;
-    padding: 50px 0;
+    padding: 100px 0;
     color: #fff;
 
 .rule{
@@ -22,7 +23,7 @@ body{background: #000;}
     z-index: 21;
     overflow: visible;
     flex: 1;
-    height: 37vw;
+    height: 35vw;
     transition: flex .5s;
     // animation: flipInY 2s alternate;
     
@@ -34,8 +35,8 @@ body{background: #000;}
         border: 1px solid rgba(0,0,0,0.35);
      .safe{
         .intro{ animation: none;}
-        h1{ transform: scale(1.5); color: #e91e63; }
-        h2{ transform: scale(1.5); color: #e91e63;}
+        h1{ transform: scale(1.3); color: #e91e63; }
+        h2{ transform: scale(1.3); color: #e91e63;}
         ul{ display: block; animation: fadeIn 2s alternate; }
      }
 
@@ -50,7 +51,7 @@ body{background: #000;}
     }
     h1{
     font-weight: 900;
-    font-size: 45px;
+    font-size: 40px;
     line-height: 2em;
     margin: 5px;
     font-family: HWTArtz;
@@ -65,7 +66,7 @@ body{background: #000;}
 
     h2{
         font-weight: 900;
-        font-size: 20spx;
+        font-size: 20px;
         margin: 10px;
         line-height: 2em;
         font-family: HWTArtz;
@@ -81,7 +82,7 @@ body{background: #000;}
         line-height: 1.5; 
         // color: rgb(247, 177, 49);
         color: #fff;
-        strong{color: red; font-size: 25px; font-weight: 700; 
+        strong{color: red; font-size: 20px; font-weight: 700; 
             text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
             0px -4px 10px rgba(255,255,255,0.3);}
     }    
@@ -93,7 +94,7 @@ body{background: #000;}
 .rule1{
     background: url(../images/rule13.png)  no-repeat center top; 
     background-size: cover; 
-    li{font-size: 20px; padding: 15px 0; font-weight: 600; line-height: 2; letter-spacing: 3px;
+    li{font-size: 17px; padding: 15px 0; font-weight: 600; line-height: 2; letter-spacing: 3px;
         text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
         0px -4px 10px rgba(255,255,255,0.3);
     }
@@ -102,7 +103,7 @@ body{background: #000;}
 .rule2{
     background: url(../images/rule14.png) no-repeat center top; 
     background-size: cover;
-    li{font-size: 18px; font-weight: 600; letter-spacing: 3px; line-height: 2;
+    li{font-size: 15px; font-weight: 600; letter-spacing: 3px; line-height: 2;
         text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
         0px -4px 10px rgba(255,255,255,0.3);
     }
@@ -111,7 +112,7 @@ body{background: #000;}
 .rule3{
     background: url(../images/rule15.png) no-repeat center top; 
     background-size: cover;
-    li{ font-size: 20px; padding: 6px 0; letter-spacing: 4px; font-weight: 600; line-height: 2;
+    li{ font-size: 17px; padding: 6px 0; letter-spacing: 4px; font-weight: 600; line-height: 2;
         text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
         0px -4px 10px rgba(255,255,255,0.3);
     }
@@ -120,7 +121,8 @@ body{background: #000;}
 
 }
 
-#article2{
+.article2.on{
+    transform: scale(1); opacity: 1; transition: all 1s;
     padding: 100px 0;
     background: url(../images/camping9.jpg) no-repeat center top;
     background-size: cover;
@@ -193,7 +195,7 @@ body{background: #000;}
 
                 i{color: #e91e63;}
 
-                p{ line-height: 1.5; font-weight: 600; padding: 10px 0; font-size: 16px; font-weight: 600;
+                p{ line-height: 1.5; font-weight: 700; padding: 10px 0; font-size: 16px; font-weight: 600;
                     // color: #fff; 
                     @media #{$phone}{ font-size: 12px; padding: 0 5px;}
                 }
@@ -204,7 +206,8 @@ body{background: #000;}
     }
 }
 
-#article4{
+.article4.on{
+    transform: scale(1); opacity: 1; transition: all 1s;
     padding: 80px 0;
     margin-bottom: 50px;
     background: url(../images/camping10.jpg) no-repeat center top;
@@ -253,7 +256,8 @@ body{background: #000;}
     }
 }
 
-#article6{
+.article6.on{
+    transform: scale(1); opacity: 1; transition: all 0.5s;
     padding: 150px 0;
     background: url(../images/camping11.jpg) no-repeat center top;
     background-size: cover;
