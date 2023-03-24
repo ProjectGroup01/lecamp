@@ -261,18 +261,19 @@ video {
   width: 100%;
   min-height: 100vh;
   position: relative;
+  padding-bottom: 200px;
 }
 
 .cont3 .container {
   width: 1400px;
-  margin: 100px auto;
+  margin: 180px auto;
 }
 
 .cont3 .cont3_inner01 {
   float: left;
   width: 434px;
   height: 566px;
-  background: url("../img/100.jpg") 0px 0px no-repeat;
+  background: url("../img/cont3_img1.jpg") no-repeat center center;
   padding: 70px 60px;
 }
 
@@ -310,6 +311,7 @@ video {
   padding: 7px 20px;
   color: #252525;
   border-color: #fff;
+  transition: all 0.3s;
 }
 
 .cont3 .cont3_inner01 .cont3_imgtxt a:hover {
@@ -384,115 +386,106 @@ video {
 
 /* 컨텐츠구역 4 */
 .cont4 {
+  background: #ecf2ff;
+  width: 100%;
   min-height: 100vh;
-  /* background: #ecf2ff; */
-}
-
-.cont4_inner {
-  width: 820px;
-  margin: 0 auto;
-}
-
-.cont4 ul {
-  margin: 220px 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.cont4 li {
-  flex: 1 1 350px;
-  margin: 0 10px 10px 0;
-  /* filter: sepia(0.7); */
   position: relative;
-  transition: all 0.8s ease-in-out;
+  padding: 75px 0 65px;
 }
 
-.cont4 li:hover {
-  /* filter: sepia(0); */
-  z-index: 1999;
+.cont4 .container {
+  width: 1400px;
+  margin: 100px auto;
 }
 
-.cont4 li:nth-child(3n) {
-  margin-right: 0;
+.cont4 .cont4_list {
+  position: relative;
+  height: 100%;
+  display: flex;
+  box-sizing: content-box;
 }
 
-.cont4 li:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-}
-
-.cont4 img {
-  transition: all 0.8s ease-in-out;
-  max-width: 100%;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-  /* border: 8px solid #ffe7cc; */
-  border-bottom-width: 30px;
-  border-radius: 15px;
-}
-
-.cont4 li:nth-child(1) img {
-  transform: translate(-10px, 20px) rotate(-10deg);
-}
-.cont4 li:nth-child(2) img {
-  transform: translate(-20px, 70px) rotate(10deg);
-}
-.cont4 li:nth-child(3) img {
-  transform: translate(-40px, 5px) rotate(13deg);
-}
-.cont4 li:nth-child(4) img {
-  transform: translate(-20px, 20px) rotate(5deg);
-}
-.cont4 li:nth-child(5) img {
-  transform: translate(-30px, 50px) rotate(-10deg);
-}
-.cont4 li:nth-child(6) img {
-  transform: translate(-40px) rotate(5deg);
-}
-
-.cont4 li .inner_cont {
+.cont4 .cont4_list .list01 .img01 {
+  width: 588px;
+  height: 650px;
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  z-index: 1;
-  align-items: center;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
-.cont4 li p,
-.cont4 li button {
-  opacity: 0;
-  letter-spacing: 1px;
-  color: #fff;
+.cont4 .cont4_list .img01 img {
+  width: 588px;
+  height: 650px;
+  display: block;
 }
 
-.cont4 li p.cont01 {
-  transform: translateY(-100%);
-  font-size: 40px;
-  font-weight: 700;
-  padding: 30px 0px;
+.cont4 .cont4_list .list02 {
+  width: 40%;
+  margin-left: 750px;
 }
 
-.cont4 li p.cont02 {
+.cont4 .cont4_list .tag {
   font-size: 20px;
-  transform: translateY(100%);
-  margin-bottom: 30px;
+  font-weight: bold;
+  border-bottom: 3px solid #111;
+  padding: 0 0 8px;
+  height: auto;
+  margin: 17px 0 18px;
+  line-height: 1;
 }
 
-.cont4 li:hover > img {
-  /* opacity: 0.8; */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 0, 0, 0.7);
-  transform: scale(2);
+.cont4 .cont4_list .item_title {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #111;
 }
 
-.cont4 li:hover p,
-.cont4 li:hover button {
-  transform: translateY(0);
-  opacity: 1;
+.cont4 .cont4_list .item_text {
+  color: #666;
+  line-height: 25px;
+  margin-top: 25px;
 }
+
+.cont4 .cont4_list ul {
+  margin-top: 45px;
+}
+
+.cont4 .cont4_list ul li {
+  position: relative;
+  height: 130px;
+}
+
+.cont4 .cont4_list ul li + li {
+  margin-top: 60px;
+}
+
+.cont4 .cont4_list ul li .img02 {
+  width: 130px;
+  height: 130px;
+}
+
+.cont4 .cont4_list ul li .img02 img {
+  width: 130px;
+  height: 130px;
+}
+
+.cont4 .cont4_list ul li .item_title {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #111;
+  line-height: 1;
+  margin-top: 7px;
+}
+
+.cont4 .cont4_list ul li .item_text {
+  font-size: 14px;
+  color: #666;
+  line-height: 16px;
+  margin-top: 5px;
+}
+
 @-webkit-keyframes fadeInDown {
   from {
     opacity: 0;
