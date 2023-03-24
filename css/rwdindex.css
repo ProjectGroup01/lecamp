@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+@media screen and (max-width: 1024px) {
+  .cont1 {
+    width: 94%;
+    padding-top: 110px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    min-height: 50vh;
+  }
+  .cont2,
+  .cont3 {
+    padding: 50px 0 50px 0;
+  }
+  .cont2 {
+    animation: none;
+    opacity: 1;
+  }
+  .cont2.animate {
+    animation: none;
+    opacity: 1;
+  }
+  .cont2 span {
+    display: inline-block;
+    opacity: 1;
+    filter: none;
+  }
+  .cont2.animate span {
+    animation: none;
+  }
+
+  .intro-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 127px;
+  }
+
+  .cont2 span {
+    color: #fff;
+    font-size: 70px;
+    display: block;
+    padding-bottom: 30px;
+  }
+  .cont3 {
+    padding-bottom: 100px;
+    animation: none;
+    opacity: 1;
+  }
+  .cont3.animate {
+    animation: none;
+  }
+  .cont3 .container {
+    position: relative;
+    width: 95%;
+    height: 600px;
+    background: #222;
+    border-radius: 50% 20% / 10% 40%;
+  }
+  #footer .footer_wrap {
+  width: 70%;
+}
+#footer .footer_logo img {
+  width: 148px;
+  height: 85px;
+  position: absolute;
+  left: -60px;
+}
+
+#footer .fnb {
+  width: 70%;
+  /* padding: 15px 0 0 0; */
+  overflow: hidden;
+  margin-left: 160px;
+  position: absolute;
+  /* top: -15px; */
+  left: 0px;
+}
+
+#footer .fnb li {
+  color: #ddd;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+#footer .fnb li:hover a {
+  color: #fff;
+}
+
+#footer .fnb li a {
+  padding: 0 0px;
+}
+
+#footer .fnb span {
+  padding-left: 5px;
+  color: #777;
+  font-size: 14px;
+}
+
+.footerBottom {
+  position: relative;
+  padding: 52px 0 0;
+  margin-top: 30px;
+  margin-left: 160px;
+  color: #ddd;
+}
+.footerBottom address {
+  font-size: 11px;
+  font-weight: 300;
+}
+
+.footerBottom .copyright {
+  margin: 10px 0 0;
+  font-size: 11px;
+  font-weight: 300;
+}
+
+  @media screen and (max-width: 768px) {
+    .cont2 span {
+      color: #fff;
+      font-size: 64px;
+      display: block;
+      padding-bottom: 30px;
+    }
+
+    .cont3 .container {
+      position: relative;
+      width: 95%;
+      height: 500px;
+      background: #222;
+      border-radius: 50% 20% / 10% 40%;
+    }
+  }
+}
