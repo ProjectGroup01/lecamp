@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/rwdcommon.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/rwdindex.css" />
+    <link rel="shortcut icon" href="./img/icon9.ico" />
+    <script src="./js/prefixfree.min.js"></script>
+    <title>LECAMP</title>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <div class="headerbox">
+          <div class="top_menu">
+            <div class="row">
+              <a href="./login.html">로그인</a>
+              <a href="./join.html">회원가입</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="logobox">
+              <h1>
+                <a href="./index.html" class="logo">
+                  <span class="blind">로고</span>
+                </a>
+              </h1>
+            </div>
+          </div>
+          <nav id="nav">
+            <div class="navbox">
+              <!-- <div class="box_bg"></div> -->
+              <ul class="depth1">
+                <li>
+                  <a href="search/index.html">캠핑장 찾기</a>
+                </li>
+                <li>
+                  <a href="recommand/index.html">캠핑장 추천</a>
+                </li>
+                <li>
+                  <a href="safety/index.html">안전수칙</a>
+                </li>
+                <li>
+                  <a href="./index.html">리캠프</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- header -->
+      <a href="#" class="hamburger-button">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      <!-- hamburger -->
+      <div class="m_menu">
+        <nav class="menu">
+          <ul class="m_depth1">
+            <li>
+              <a href="search/index.html">캠핑장 찾기</a>
+              <p class="bar"></p>
+            </li>
+            <li>
+              <a href="recommand/index.html">캠핑장 추천</a>
+              <p class="bar"></p>
+            </li>
+            <li>
+              <a href="safety/index.html">안전수칙</a>
+              <p class="bar"></p>
+            </li>
+            <li>
+              <a href="./index.html">리캠프</a>
+              <p class="bar"></p>
+            </li>
+            <li class="topMenu">
+              <a href="./login.html">로그인</a>
+            </li>
+            <li class="topMenu">
+              <a href="./join.html">회원가입</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- m_menu -->
+      <section id="section">
+        <article class="cont1">
+          <div class="visual">
+            <div class="video">
+              <video id="vid" muted autoplay loop>
+                <source src="./img/camping.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </article>
+        <article class="cont2">
+          <div class="container">
+            <div class="search">
+              <ul class="searchUl">
+                <li>
+                  위치
+                  <br />
+                  <span>어디로 캠핑가세요?</span>
+                </li>
+                <li>
+                  체크인
+                  <br />
+                  <span>날짜 선택</span>
+                </li>
+                <li>
+                  체크아웃
+                  <br />
+                  <span>날짜 선택</span>
+                </li>
+                <li>
+                  인원
+                  <br />
+                  <span>게스트 추가</span>
+                </li>
+              </ul>
+              <button class="search-btn" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+            <div id="chek" class="checklist">
+              <div id="group1" class="group1 group">
+                <div class="title"><p>지역</p></div>
+                <!-- title -->
+                <div class="list">
+                  <span data-check="서울">서울</span>
+                  <span data-check="부산">부산</span>
+                  <span data-check="대구">대구</span>
+                  <span data-check="인천">인천</span>
+                  <span data-check="광주">광주</span>
+                  <span data-check="대전">대전</span>
+                  <span data-check="울산">울산</span>
+                  <span data-check="세종">세종</span>
+                  <span data-check="경기">경기</span>
+                  <span data-check="강원">강원</span>
+                  <span data-check="충북">충북</span>
+                  <span data-check="충남">충남</span>
+                  <span data-check="전북">전북</span>
+                  <span data-check="전남">전남</span>
+                  <span data-check="경북">경북</span>
+                  <span data-check="경남">경남</span>
+                  <span data-check="제주">제주</span>
+                </div>
+                <!-- list -->
+              </div>
+              <!-- group1 -->
+              <div id="group2" class="group2 group">
+                <div class="title">주변 환경</div>
+                <!-- title -->
+                <div class="list">
+                  <span data-check="산">산</span>
+                  <span data-check="바다">바다</span>
+                  <span data-check="강">강</span>
+                  <span data-check="계곡">계곡</span>
+                  <span data-check="섬">섬</span>
+                </div>
+                <!-- list -->
+              </div>
+              <!-- group2 -->
+              <div id="group3" class="group3 group">
+                <div class="title">캠핑장 형태</div>
+                <!-- title -->
+                <div class="list">
+                  <span data-check="텐트">텐트</span>
+                  <span data-check="캠핑카">캠핑카</span>
+                  <span data-check="트레일러">트레일러</span>
+                  <span data-check="카라반">카라반</span>
+                  <span data-check="차박">차박</span>
+                </div>
+                <!-- list -->
+              </div>
+              <!-- group3 -->
+              <div id="bottom" class="chlbottom"></div>
+              <!-- chlbottom -->
+              <div class="chlbutton">
+                <div id="btn1" class="btn">초기화</div>
+                <div id="btn2" class="btn">검색하기</div>
+              </div>
+              <!-- chlbutton -->
+              <div class="result">
+                <h2>검색결과가 없습니다.</h2>
+              </div>
+              <!-- result -->
+            </div>
+            <!-- checklist -->
+          </div>
+        </article>
+        <article class="cont3">
+          <div class="container">
+            <div class="cont3_inner01">
+              <div class="cont3_cont01">
+                <strong class="tit">2023<br />주목해야 할 <br />캠핑장소</strong>
+              </div>
+              <div class="cont3_img">
+                <span class="cont3_imgtxt">
+                  <a href="#">캠핑을 결심하기에 좋은 장소</a>
+                </span>
+                <span class="cont3_imgtxt">
+                  <a href="#">캠핑을 가장 캠핑답게 하는 방법</a>
+                </span>
+                <span class="cont3_imgtxt">
+                  <a href="#">따뜻한 봄을 위한 캠핑</a>
+                </span>
+              </div>
+            </div>
+
+            <div class="cont3_inner02">
+              <div class="cont3_cont02">
+                <ul class="cont3_list">
+                  <li>
+                    <div class="img">
+                      <img src="./img/200.jpg" alt="" />
+                    </div>
+                    <div class="htl">
+                      <div class="name_group">
+                        <strong class="item_title">동유럽 4국 9일 #할슈타트</strong>
+                        <p class="item_text">[얼리버드]#프라하 시내호텔 #빈 2대 궁전투어</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="img">
+                      <img src="./img/300.jpg" alt="" />
+                    </div>
+                    <div class="htl">
+                      <div class="name_group">
+                        <strong class="item_title">동유럽 4국 9일 #할슈타트</strong>
+                        <p class="item_text">[얼리버드]#프라하 시내호텔 #빈 2대 궁전투어</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="img">
+                      <img src="./img/2.jpg" alt="" />
+                    </div>
+                    <div class="htl">
+                      <div class="name_group">
+                        <strong class="item_title">동유럽 4국 9일 #할슈타트</strong>
+                        <p class="item_text">[얼리버드]#프라하 시내호텔 #빈 2대 궁전투어</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="cont4">
+          <div class="cont4_inner">
+            <ul>
+              <li>
+                <img src="./img/camping1.jpg" alt="" />
+                <div class="inner_cont">
+                  <p class="cont01">캠핑장 정보</p>
+                  <p class="cont02">다양한 캠핑장을 만나보세요</p>
+                  <button class="btn btn-one">
+                    <span><a href="./search/index.html">더보기</a></span>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <img src="./img/camping2.jpg" alt="" />
+                <div class="inner_cont">
+                  <p class="cont01">캠핑장 추천</p>
+                  <p class="cont02">머물고 싶은곳을 찾으시나요</p>
+                  <button class="btn btn-one">
+                    <span><a href="./recommand/index.html">더보기</a></span>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <img src="./img/camping3.jpg" alt="" />
+                <div class="inner_cont">
+                  <p class="cont01">국내 캠핑 여행</p>
+                  <p class="cont02">차박, 오토캠핑, 캠크닉</p>
+                  <button class="btn btn-one">
+                    <span><a href="./recommand/index.html">더보기</a></span>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <img src="./img/camping4.jpg" alt="" />
+                <div class="inner_cont">
+                  <p class="cont01">캠핑 장비 추천</p>
+                  <p class="cont02">캠핑 장비가 필요하신가요</p>
+                  <button class="btn btn-one">
+                    <span><a href="./recommand/index.html">더보기</a></span>
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <!-- section -->
+      <footer id="footer">
+        <div class="footer_wrap">
+          <div class="footer_logo">
+            <img src="./img/LECAMP_flogo.png" alt="" />
+          </div>
+          <div class="fnb">
+            <ul>
+              <li><a href="#">이용약관</a><span>|</span></li>
+              <li><a href="#">개인정보처리방침</a><span>|</span></li>
+              <li><a href="#">이메일주소 무단수집거부</a></li>
+            </ul>
+          </div>
+          <div class="footerBottom">
+            <address>서울특별시 강남구 강남구 테헤란로5길 24</address>
+            <p class="copyright">Copyright ⓒ 2020 LECAMP. LTD. All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+      <!-- footer -->
+      <script src="./js/common.js"></script>
+    </div>
+  </body>
+</html>
