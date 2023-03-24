@@ -17,31 +17,73 @@ article {
   width: 100%;
   position: relative;
   left: 50%;
+  min-height: 80vh;
   transform: translateX(-50%);
-  min-height: 100vh;
   box-sizing: border-box;
+  background: #cdf0ea;
 }
 
-.cont1 .video {
-  margin: 0 auto;
-  height: auto;
-  overflow: hidden;
-  animation: fadein 3s;
+.cont1 .container {
+  width: 1400px;
+  margin: 200px auto;
 }
 
-video {
+.cont1 .inner_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont1 .inner_wrap .left {
+  width: 40%;
+  padding-right: 100px;
+  position: relative;
+}
+
+.cont1 .inner_wrap .left div {
+  width: 82px;
+  height: 60px;
+  background: url(../img/caravan.png) no-repeat right;
+  position: absolute;
+  animation: animation 5s ease-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animation {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 400px;
+  }
+}
+
+.cont1 .inner_wrap .right {
+  width: 50%;
+}
+
+.cont1 .inner_wrap .right video {
   width: 100%;
 }
 
-@keyframes fadein {
-  from {
-    /* opacity: 0; */
-    transform: scale(0);
-  }
-  to {
-    /* opacity: 1; */
-    transform: scale(1);
-  }
+.cont1 .inner_wrap .ment1 {
+  font-size: 30px;
+  font-weight: 700;
+  border-bottom: 1px solid #767676;
+  padding: 0 0 10px;
+  height: auto;
+  margin: 20px;
+  line-height: 60px;
+}
+
+.cont1 .inner_wrap .ment2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #111;
+  margin: 20px;
+  padding: 0 0 10px;
 }
 
 /* 컨텐츠구역 2 */
