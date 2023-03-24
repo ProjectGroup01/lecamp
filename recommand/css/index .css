@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+.article1 { 
+  padding-top: 100px;
+  margin: 0 auto;
+  max-width: 1024px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; 
+  position: relative;  */
+  color: #767676; 
+}
+.article1 .place { padding: 90px 0 18px; font-size: 30px; }
+.article1 .add { font-size: 20px; }
+.article1 .price { margin: 24px 0 34px; color:blue; font-size: 24px; }
+
+.article1 .gourl {
+  animation: blink-2 1.5s normal infinite;
+  position: absolute;
+  font-size: 24px;
+  bottom: 50px;
+}
+.article1 .photos {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 31px;
+  overflow: hidden;
+}
+.article1 .photos .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  /* height: 37.25vw; */
+  height: 483px;
+  overflow: hidden;
+  border-radius: 26px;
+}
+.article1 .photos .img img {
+  min-width: 100%;
+  min-height: 60%;
+  width: auto;
+  height: auto;
+}
+.article1 .photos .imgs {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-around;
+}
+.article1 .photos .imgs li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 13px;
+  width: 258px;
+  height: 235px;
+  overflow: hidden;
+  border-radius: 26px;
+}
+.article1 .photos .imgs li img {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+div style {
+  position: absolute;
+  width: 14%;
+  height:24%;
+  line-height: 19.6vw;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 26px;
+}
+
+#pop-place-photo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.87);
+  z-index: 1000;
+}
+#pop-place-photo .close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  right: 42px;
+  margin-top: -398px;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+}
+#pop-place-photo .page {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -380px;
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
+#pop-place-photo .page span {
+  font-size: 24px;
+  color: blue;
+}
+#pop-place-photo .pop-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -270px 0 0 -405px;
+  width: 810px;
+  height: 540px;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 57px;
+}
+#pop-place-photo .pop-content .photo-list {}
+#pop-place-photo .pop-content .photo-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#pop-place-photo .pop-content .photo-list li img {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+}
+#pop-place-photo .pop-content .photo-list li:first-child {
+  left: 0;
+}
+#pop-place-photo .arrow a {
+  position: absolute;
+  top: 50%;
+  margin-top: -28px;
+  font-size: 55px;
+}
+#pop-place-photo .arrow a.prev { left: 50px; }
+#pop-place-photo .arrow a.next { right: 50px; }
+
+/* 링크 클릭 버튼 */
+.article1 .box .zoom .gourl{
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.4s;
+  font-size: 25px;
+}
+.article1 .box .zoom .gourl:hover {
+  color: #fff;
+  animation: none;
+  text-shadow:rgba(0, 0, 0, 0.56) 0px 0px 25px 1px ;
+}
