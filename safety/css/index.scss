@@ -1,14 +1,14 @@
 $phone: "screen and (max-width:1024px)"; 
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dokdo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Hahmlet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
 
 // @media #{$phone}{ }
 
 *{ margin: 0 auto;}
 
-section { font-family: 'Hahmlet', serif;}
+section { font-family: 'Nanum Gothic', sans-serif;}
 
 body{background: #000;}
 
@@ -62,7 +62,6 @@ body{background: #000;}
     font-family: HWTArtz;
     transition: all 0.5s;
     color:#fff;
-    font-family: 'Dokdo', cursive;
     text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
     0px -4px 10px rgba(255,255,255,0.3);
     
@@ -77,7 +76,6 @@ body{background: #000;}
         font-family: HWTArtz;
         transition: all 0.5s;
         color:#fff;
-        font-family: 'Dokdo', cursive;
         text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
         0px -4px 10px rgba(255,255,255,0.3);
     }  
