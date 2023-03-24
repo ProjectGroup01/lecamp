@@ -43,6 +43,7 @@ body {
 }
 #article1 .rule:hover .safe ul {
   display: block;
+  animation: fadeIn 2s;
 }
 #article1 .rule:hover .safe h1 {
   transform: scale(1.3);
