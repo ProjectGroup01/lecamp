@@ -1,0 +1,287 @@
+$phone: "screen and (max-width:1024px)"; 
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&display=swap');
+
+// @media #{$phone}{ }
+
+*{ margin: 0 auto;}
+
+#section{
+    font-family: 'Sunflower', sans-serif;}
+body{background: #000;}
+
+#article1{
+    display: flex; text-align:center;
+    margin: 100px auto;
+    padding: 50px 0;
+    color: #fff;
+
+.rule{
+    position: relative;
+    z-index: 21;
+    overflow: visible;
+    flex: 1;
+    height: 37vw;
+    transition: flex .5s;
+    // animation: flipInY 2s alternate;
+    &:hover{flex: 1.5;
+     .safe{
+        .intro{ animation: none;}
+        h1{ transform: scale(1.5); }
+        h2{ transform: scale(1.5); }
+        ul{ display: block; animation: fadeIn 2s alternate; }
+     }
+
+    }
+
+.safe{
+    position: absolute;top: 50%;left:50%;transform: translate(-50%,-50%); 
+    transition: all 0.5s; width: 100%;
+
+    .intro{
+        animation: flash 2s infinite;
+        margin: 20px 0;
+    }
+    h1{
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 2em;
+    margin: 5px;
+    font-family: HWTArtz;
+    transition: all 0.5s;
+    color:#fff;
+    font-family: 'Dokdo', cursive;
+
+    }
+
+    h2{
+        font-weight: 900;
+        font-size: 20spx;
+        margin: 10px;
+        line-height: 2em;
+        font-family: HWTArtz;
+        transition: all 0.5s;
+        color:#fff;
+        font-family: 'Dokdo', cursive;
+    }  
+   
+    ul{ 
+        display: none; 
+        line-height: 1.5; 
+        // color: rgb(247, 177, 49);
+        color: #fb8c00;
+        strong{color: red; font-size: 20px; font-weight: 700;}
+    }    
+
+    
+}
+
+}
+.rule1{
+    background: url(../images/rule13.png)  no-repeat center top; 
+    background-size: cover; cursor: pointer;
+    li{font-size: 20px; padding: 15px 0; font-weight: 600; line-height: 2; letter-spacing: 3px; }
+     
+}    
+.rule2{
+    background: url(../images/rule14.png) no-repeat center top; 
+    background-size: cover; cursor: pointer;
+    li{font-size: 18px; font-weight: 600; letter-spacing: 3px; line-height: 2;}
+    
+}    
+.rule3{
+    background: url(../images/rule15.png) no-repeat center top; 
+    background-size: cover; cursor: pointer;
+    li{ font-size: 20px; padding: 6px 0; letter-spacing: 4px; font-weight: 600; line-height: 2;}
+
+}    
+
+}
+
+#article2{
+    padding: 150px 0;
+    background: url(../images/camping9.jpg) no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Staatliches', cursive;
+    margin-top: 100px;
+    margin: 200px 0;
+    color: #fff; text-align: center; 
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+      0px -4px 10px rgba(255,255,255,0.3);
+    // font-weight:900;
+    border-radius: 100% 20% / 100% 20%;
+    p{ font-size: 40px; line-height: 2; letter-spacing: 5px; font-weight: 900;
+        @media #{$phone}{ font-size: 25px;}}
+    h2{ font-size: 30px;  line-height: 1.5; letter-spacing: 10px; font-weight: 900;
+        @media #{$phone}{ font-size: 20px; }}    
+}
+
+
+
+#article3{
+    max-width: 1500px;
+    margin: 150px auto;
+    text-align: center;
+    h1{ font-size: 50px; color: rgb(247, 177, 49); font-weight: 900;
+        animation: flash 2s infinite; 
+        @media #{$phone}{ animation: none; font-size: 30px; margin: 0;} 
+    }
+
+    .content1 {
+        margin: 0 30px;
+    }
+     strong{ line-height: 3; font-size: 20px; color:#e91e63; font-weight: 600;
+        @media #{$phone}{ font-size: 18px; font-weight: bold;}}
+
+    .list li:hover{
+        animation: none;
+    }    
+    .intro { line-height: 2; color: #fff; font-weight: 600; letter-spacing: 2px;
+             font-size: 18px;
+        @media #{$phone}{ display: none; }}
+    
+    .list{ 
+        padding: 70px; display: flex; list-style: none;  
+        
+        @media #{$phone}{ animation: none; padding: 10px; flex-wrap: wrap;}
+   
+        li{ flex:1 1 25%; margin: 0 20px;
+            background: #ffebee;
+            box-shadow: rgba(255, 255, 255, 0.9) 0px 0px 20px, rgba(0, 0, 0, 0.22) 0px 0px 5px;
+            &:hover {
+                animation: slide 0.5s normal both;
+                @media #{$phone}{ animation: none;}
+
+            }
+           
+            @media #{$phone}{ flex:1 1 40%; margin: 5px 5px; animation: none;}
+            
+            .box{
+                 height: auto; padding: 20px 0; background: #ffebee;
+                border-radius: 1px;  box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 20px, rgba(0, 0, 0, 0.22) 0px 0px 5px;
+                transition: all 0.5s;
+                &:hover{ background: rgb(233, 97, 79); color: #fff;}
+                @media #{$phone}{  border-radius: 1px; box-shadow: none;}
+                img{border-radius: 50%; padding: 20px 0; text-align: center; 
+                    @media #{$phone}{ width: 100%; padding: 10px 0; }
+                }
+                h3{line-height: 2; font-size: 25px; font-weight: bold; letter-spacing: 2px;
+                    @media #{$phone}{ font-size: 15px; }
+                }
+
+                i{color: #e91e63;}
+
+                p{ line-height: 1.5; font-weight: 600; padding: 10px 0; font-size: 16px; font-weight: 600;
+                    // color: #fff; 
+                    @media #{$phone}{ font-size: 12px; padding: 0 5px;}
+                }
+                img{width: 50%;
+                }
+            }
+        }
+    }
+}
+
+#article4{
+    padding: 100px 0;
+    margin-bottom: 50px;
+    background: url(../images/camping10.jpg) no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Staatliches', cursive;
+    margin: 200px 0;
+    color: #fff; text-align: center; 
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+      0px -4px 10px rgba(255,255,255,0.3);
+    // font-weight:900;
+    border-radius: 20% 100% / 20% 100%;
+    p{ font-size: 40px; line-height: 2; letter-spacing: 5px; font-weight: 900;
+        @media #{$phone}{ font-size: 25px;}}
+    h2{ font-size: 30px;  line-height: 1.5; letter-spacing: 10px; font-weight: 900;
+        @media #{$phone}{ font-size: 20px; }}
+}
+
+
+#article5{
+    display: flex; padding: 50px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    width: 98%;
+    margin: 150px auto;
+    border: 2px solid #fff;
+    border-radius: 1px;
+    // animation: pulse 2s alternate infinite;
+    animation: slide-top 2s infinite; 
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 20px, rgba(0, 0, 0, 0.22) 0px 0px 5px;
+&:hover{
+    animation: none;
+}    
+    @media #{$phone}{ padding: 10px; animation: none;}
+    .movie{ margin: 0 auto; }
+    h1{ padding: 10px 0; font-size: 35px; font-weight: bold;
+        @media #{$phone}{ font-size: 20px;}}
+    h2{ padding: 20px; color:#e91e63; font-size: 20px; font-weight: 600;
+        @media #{$phone}{ font-size: 14px;}}
+    strong{font-size: 25px;}
+    .img{ padding: 20px 0; cursor: pointer; display: flex;
+        @media #{$phone}{ display: block; width: 100%;  text-align: center;}
+     p{ flex: 1; margin: 0 30px;
+        @media #{$phone}{ padding: 10px 0;}
+     }
+    }
+}
+
+#article6{
+    padding: 150px 0;
+    background: url(../images/camping11.jpg) no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Staatliches', cursive;
+    margin: 100px 0;
+    color: #fff; text-align: center; 
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+      0px -4px 10px rgba(255,255,255,0.3);
+    // font-weight:bold;
+    border-radius: 100% 20% / 100% 20%;
+    p{ font-size: 40px; line-height: 2; letter-spacing: 5px; font-weight: 900;
+        @media #{$phone}{ font-size: 25px;}}
+    h2{ font-size: 30px;  line-height: 1.5; letter-spacing: 10px; font-weight: 900;
+        @media #{$phone}{ font-size: 22px; }}
+}
+
+
+.sub2-text {
+        margin: 10px 0;
+        display: flex;
+        flex: 0 0 auto;
+        white-space: nowrap;
+        padding: 50px 0;
+        overflow: hidden;
+        transition: 0.5s;
+        font-size: 80px;
+        color: #fff;
+        font-family: "Rubik Vinyl", cursive;
+
+        .sub2-wrap {
+            animation: textLoop 10s linear infinite;
+            padding: 50px 0;
+            padding-right: 60px;
+            @keyframes textLoop {
+              0% {
+                transform: translate3d(0, 0, 0);
+              }
+              100% {
+                transform: translate3d(-100%, 0, 0);
+              }
+         }
+      
+          }
+
+}
+
+   
+        

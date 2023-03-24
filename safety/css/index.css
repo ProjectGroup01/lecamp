@@ -1,0 +1,469 @@
+@import url("https://fonts.googleapis.com/css2?family=Sunflower:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dokdo&display=swap");
+* {
+  margin: 0 auto;
+}
+
+#section {
+  font-family: "Sunflower", sans-serif;
+}
+
+body {
+  background: #000;
+}
+
+#article1 {
+  display: flex;
+  text-align: center;
+  margin: 100px auto;
+  padding: 50px 0;
+  color: #fff;
+}
+#article1 .rule {
+  position: relative;
+  z-index: 21;
+  overflow: visible;
+  flex: 1;
+  height: 37vw;
+  transition: flex 0.5s;
+}
+#article1 .rule:hover {
+  flex: 1.5;
+}
+#article1 .rule:hover .safe .intro {
+  animation: none;
+}
+#article1 .rule:hover .safe h1 {
+  transform: scale(1.5);
+}
+#article1 .rule:hover .safe h2 {
+  transform: scale(1.5);
+}
+#article1 .rule:hover .safe ul {
+  display: block;
+  animation: fadeIn 2s alternate;
+}
+#article1 .rule .safe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+  width: 100%;
+}
+#article1 .rule .safe .intro {
+  animation: flash 2s infinite;
+  margin: 20px 0;
+}
+#article1 .rule .safe h1 {
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 2em;
+  margin: 5px;
+  font-family: HWTArtz;
+  transition: all 0.5s;
+  color: #fff;
+  font-family: "Dokdo", cursive;
+}
+#article1 .rule .safe h2 {
+  font-weight: 900;
+  font-size: 20spx;
+  margin: 10px;
+  line-height: 2em;
+  font-family: HWTArtz;
+  transition: all 0.5s;
+  color: #fff;
+  font-family: "Dokdo", cursive;
+}
+#article1 .rule .safe ul {
+  display: none;
+  line-height: 1.5;
+  color: #fb8c00;
+}
+#article1 .rule .safe ul strong {
+  color: red;
+  font-size: 20px;
+  font-weight: 700;
+}
+#article1 .rule1 {
+  background: url(../images/rule13.png) no-repeat center top;
+  background-size: cover;
+  cursor: pointer;
+}
+#article1 .rule1 li {
+  font-size: 20px;
+  padding: 15px 0;
+  font-weight: 600;
+  line-height: 2;
+  letter-spacing: 3px;
+}
+#article1 .rule2 {
+  background: url(../images/rule14.png) no-repeat center top;
+  background-size: cover;
+  cursor: pointer;
+}
+#article1 .rule2 li {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 2;
+}
+#article1 .rule3 {
+  background: url(../images/rule15.png) no-repeat center top;
+  background-size: cover;
+  cursor: pointer;
+}
+#article1 .rule3 li {
+  font-size: 20px;
+  padding: 6px 0;
+  letter-spacing: 4px;
+  font-weight: 600;
+  line-height: 2;
+}
+
+#article2 {
+  padding: 150px 0;
+  background: url(../images/camping9.jpg) no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Staatliches", cursive;
+  margin-top: 100px;
+  margin: 200px 0;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
+  border-radius: 100% 20%/100% 20%;
+}
+#article2 p {
+  font-size: 40px;
+  line-height: 2;
+  letter-spacing: 5px;
+  font-weight: 900;
+}
+@media screen and (max-width:1024px) {
+  #article2 p {
+    font-size: 25px;
+  }
+}
+#article2 h2 {
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: 10px;
+  font-weight: 900;
+}
+@media screen and (max-width:1024px) {
+  #article2 h2 {
+    font-size: 20px;
+  }
+}
+
+#article3 {
+  max-width: 1500px;
+  margin: 150px auto;
+  text-align: center;
+}
+#article3 h1 {
+  font-size: 50px;
+  color: rgb(247, 177, 49);
+  font-weight: 900;
+  animation: flash 2s infinite;
+}
+@media screen and (max-width:1024px) {
+  #article3 h1 {
+    animation: none;
+    font-size: 30px;
+    margin: 0;
+  }
+}
+#article3 .content1 {
+  margin: 0 30px;
+}
+#article3 strong {
+  line-height: 3;
+  font-size: 20px;
+  color: #e91e63;
+  font-weight: 600;
+}
+@media screen and (max-width:1024px) {
+  #article3 strong {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+#article3 .list li:hover {
+  animation: none;
+}
+#article3 .intro {
+  line-height: 2;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+@media screen and (max-width:1024px) {
+  #article3 .intro {
+    display: none;
+  }
+}
+#article3 .list {
+  padding: 70px;
+  display: flex;
+  list-style: none;
+}
+@media screen and (max-width:1024px) {
+  #article3 .list {
+    animation: none;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+}
+#article3 .list li {
+  flex: 1 1 25%;
+  margin: 0 20px;
+  background: #ffebee;
+  box-shadow: rgba(255, 255, 255, 0.9) 0px 0px 20px, rgba(0, 0, 0, 0.22) 0px 0px 5px;
+}
+#article3 .list li:hover {
+  animation: slide 0.5s normal both;
+}
+@media screen and (max-width:1024px) {
+  #article3 .list li:hover {
+    animation: none;
+  }
+}
+@media screen and (max-width:1024px) {
+  #article3 .list li {
+    flex: 1 1 40%;
+    margin: 5px 5px;
+    animation: none;
+  }
+}
+#article3 .list li .box {
+  height: auto;
+  padding: 20px 0;
+  background: #ffebee;
+  border-radius: 1px;
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 20px, rgba(0, 0, 0, 0.22) 0px 0px 5px;
+  transition: all 0.5s;
+}
+#article3 .list li .box:hover {
+  background: rgb(233, 97, 79);
+  color: #fff;
+}
+@media screen and (max-width:1024px) {
+  #article3 .list li .box {
+    border-radius: 1px;
+    box-shadow: none;
+  }
+}
+#article3 .list li .box img {
+  border-radius: 50%;
+  padding: 20px 0;
+  text-align: center;
+}
+@media screen and (max-width:1024px) {
+  #article3 .list li .box img {
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+#article3 .list li .box h3 {
+  line-height: 2;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+@media screen and (max-width:1024px) {
+  #article3 .list li .box h3 {
+    font-size: 15px;
+  }
+}
+#article3 .list li .box i {
+  color: #e91e63;
+}
+#article3 .list li .box p {
+  line-height: 1.5;
+  font-weight: 600;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+@media screen and (max-width:1024px) {
+  #article3 .list li .box p {
+    font-size: 12px;
+    padding: 0 5px;
+  }
+}
+#article3 .list li .box img {
+  width: 50%;
+}
+
+#article4 {
+  padding: 100px 0;
+  margin-bottom: 50px;
+  background: url(../images/camping10.jpg) no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Staatliches", cursive;
+  margin: 200px 0;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
+  border-radius: 20% 100%/20% 100%;
+}
+#article4 p {
+  font-size: 40px;
+  line-height: 2;
+  letter-spacing: 5px;
+  font-weight: 900;
+}
+@media screen and (max-width:1024px) {
+  #article4 p {
+    font-size: 25px;
+  }
+}
+#article4 h2 {
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: 10px;
+  font-weight: 900;
+}
+@media screen and (max-width:1024px) {
+  #article4 h2 {
+    font-size: 20px;
+  }
+}
+
+#article5 {
+  display: flex;
+  padding: 50px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  width: 98%;
+  margin: 150px auto;
+  border: 2px solid #fff;
+  border-radius: 1px;
+  animation: slide-top 2s infinite;
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 20px, rgba(0, 0, 0, 0.22) 0px 0px 5px;
+}
+#article5:hover {
+  animation: none;
+}
+@media screen and (max-width:1024px) {
+  #article5 {
+    padding: 10px;
+    animation: none;
+  }
+}
+#article5 .movie {
+  margin: 0 auto;
+}
+#article5 h1 {
+  padding: 10px 0;
+  font-size: 35px;
+  font-weight: bold;
+}
+@media screen and (max-width:1024px) {
+  #article5 h1 {
+    font-size: 20px;
+  }
+}
+#article5 h2 {
+  padding: 20px;
+  color: #e91e63;
+  font-size: 20px;
+  font-weight: 600;
+}
+@media screen and (max-width:1024px) {
+  #article5 h2 {
+    font-size: 14px;
+  }
+}
+#article5 strong {
+  font-size: 25px;
+}
+#article5 .img {
+  padding: 20px 0;
+  cursor: pointer;
+  display: flex;
+}
+@media screen and (max-width:1024px) {
+  #article5 .img {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+#article5 .img p {
+  flex: 1;
+  margin: 0 30px;
+}
+@media screen and (max-width:1024px) {
+  #article5 .img p {
+    padding: 10px 0;
+  }
+}
+
+#article6 {
+  padding: 150px 0;
+  background: url(../images/camping11.jpg) no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Staatliches", cursive;
+  margin: 100px 0;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
+  border-radius: 100% 20%/100% 20%;
+}
+#article6 p {
+  font-size: 40px;
+  line-height: 2;
+  letter-spacing: 5px;
+  font-weight: 900;
+}
+@media screen and (max-width:1024px) {
+  #article6 p {
+    font-size: 25px;
+  }
+}
+#article6 h2 {
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: 10px;
+  font-weight: 900;
+}
+@media screen and (max-width:1024px) {
+  #article6 h2 {
+    font-size: 22px;
+  }
+}
+
+.sub2-text {
+  margin: 10px 0;
+  display: flex;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  padding: 50px 0;
+  overflow: hidden;
+  transition: 0.5s;
+  font-size: 80px;
+  color: #fff;
+  font-family: "Rubik Vinyl", cursive;
+}
+.sub2-text .sub2-wrap {
+  animation: textLoop 10s linear infinite;
+  padding: 50px 0;
+  padding-right: 60px;
+}
+@keyframes textLoop {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}/*# sourceMappingURL=index.css.map */
