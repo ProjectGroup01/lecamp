@@ -16,9 +16,9 @@ $(window).on('load', function(){
 
 let article2Near = $('.article2').offset().top - $(window).height()/2
 
-let article4Near = $('.article4').offset().top - $(window).height()/2
+// let article4Near = $('.article4').offset().top - $(window).height()/2
 
-let article6Near = $('.article6').offset().top - $(window).height()/2
+// let article6Near = $('.article6').offset().top - $(window).height()/2
 
 
 $(window).on('scroll', function(){
@@ -30,18 +30,18 @@ $(window).on('scroll', function(){
    }
 
 
-   if(sct >= article4Near){
-    $('.article4').addClass('on')
-   }else{
-    $('.article4').removeClass('on')
-   }
+//    if(sct >= article4Near){
+//     $('.article4').addClass('on')
+//    }else{
+//     $('.article4').removeClass('on')
+//    }
 
 
-   if(sct >= article6Near){
-    $('.article6').addClass('on')
-   }else{
-    $('.article6').removeClass('on')
-   }
+//    if(sct >= article6Near){
+//     $('.article6').addClass('on')
+//    }else{
+//     $('.article6').removeClass('on')
+//    }
 
 });
 

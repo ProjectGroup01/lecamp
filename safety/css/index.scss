@@ -10,11 +10,11 @@ $phone: "screen and (max-width:1024px)";
 
 section { font-family: 'Nanum Gothic', sans-serif;}
 
-body{background: #cdf0ea;}
+body{background: #a9e6f5;}
 
 #article1{
     display: flex; text-align:center;
-    margin: 50px auto;
+    margin-top: 150px;
     padding: 80px 0;
     color: #fff;
 
@@ -27,18 +27,19 @@ body{background: #cdf0ea;}
     transition: all .5s;
     display:flex; justify-content:center; align-items:center; 
     overflow:hidden; 
-    // animation: flipInY 2s alternate;
     
     &:hover{flex: 1.5;
         cursor: pointer;
-        background: rgba(0,0,0,0.9);
+        background: rgba(0,0,0,1);
+        // background: #fff;
         -webkit-backdrop-filter: blur(2px);
         backdrop-filter: blur(2px);
         border: 1px solid rgba(0,0,0,0.35);
      .safe{
         ul{ display:block; animation: fadeIn 2s; }
-        h1{ transform: scale(1.2); color: #e91e63; }
-        h2{ transform: scale(1.2); color: #e91e63;}
+        img{ display:block; animation: fadeIn 2s; animation: zoomIn 2s alternate; }
+        h1{ display: none; transform: scale(1.2); color: #e91e63; }
+        h2{ display: none; transform: scale(1.2); color: #e91e63;}
      }
 
     }
@@ -82,13 +83,17 @@ body{background: #cdf0ea;}
    
     ul{ 
         display:none; 
-        border:1px solid #fff; border-radius:5px; padding:10px 20px;
+        // border:1px solid #fff; border-radius:5px; padding:10px 20px;
         line-height: 1.5; 
         // color: rgb(247, 177, 49);
         color: #fff;
         strong{color: red; font-size: 20px; font-weight: 700; 
             text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
             0px -4px 10px rgba(255,255,255,0.3);}
+    }    
+    img{ 
+        display:none; width: 32vw; height: 60vh; text-align: center;
+
     }    
 
     
@@ -127,12 +132,12 @@ body{background: #cdf0ea;}
 
 .article2{
     opacity: 0; transition: all 1s;
-    padding: 120px 0;
-    background: url(../images/camping10.jpg) no-repeat center top;
-    background-size: cover;
+    padding: 150px 0;
+    background: url(../images/camping14.png) no-repeat center top;
+    background-size: contain;
     background-attachment: fixed;
     font-family: 'Staatliches', cursive;
-    margin: 200px 0;
+    margin-top: 300px;
     color: #fff; text-align: center; 
     text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
       0px -4px 10px rgba(255,255,255,0.3);
@@ -140,17 +145,20 @@ body{background: #cdf0ea;}
     &.on { opacity:1; }  
     p{ font-size: 40px; line-height: 2; letter-spacing: 5px; font-weight: 900;
         @media #{$phone}{ font-size: 25px;}}
-    h2{ font-size: 30px;  line-height: 1.5; letter-spacing: 10px; font-weight: 900;
+    h2{ font-size: 30px;  line-height: 2; letter-spacing: 10px; font-weight: 900;
         @media #{$phone}{ font-size: 20px; }}    
 }
 
 
 
 #article3{
+    background: #f0ebc5;
+    border-radius: 100px;
     max-width: 1500px;
     margin: 100px auto;
+    padding: 50px 0;
     text-align: center;
-    h1{ font-size: 50px; color: rgb(233, 18, 47); font-weight: 900;
+    h1{ font-size: 50px; color: #334257; font-weight: 900;
         animation: flash 3s infinite; 
         @media #{$phone}{ animation: none; font-size: 30px; margin: 0;} 
     }
@@ -164,7 +172,7 @@ body{background: #cdf0ea;}
     .list li:hover{
         animation: none;
     }    
-    .intro { line-height: 2; color: #000; font-weight: 900; letter-spacing: 2px;
+    .intro { line-height: 2; color:#334257; font-weight: 900; letter-spacing: 2px;
              font-size: 18px;
         @media #{$phone}{ display: none; }}
     
@@ -210,25 +218,25 @@ body{background: #cdf0ea;}
     }
 }
 
-.article4{
-    opacity: 0; transition: all 1s;
-    padding: 120px 0;
-    margin-bottom: 50px;
-    background: url(../images/camping13.png) no-repeat center top;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Staatliches', cursive;
-    margin: 100px 0;
-    color: #fff; text-align: center; 
-    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
-      0px -4px 10px rgba(255,255,255,0.3);
-    //   border-radius: 50% 150px / 50% 150px;
-      &.on { opacity:1; }  
-    p{ font-size: 40px; line-height: 2; letter-spacing: 5px; font-weight: 900;
-        @media #{$phone}{ font-size: 25px;}}
-    h2{ font-size: 30px;  line-height: 1.5; letter-spacing: 10px; font-weight: 900;
-        @media #{$phone}{ font-size: 20px; }}
-}
+// .article4{
+//     opacity: 0; transition: all 1s;
+//     padding: 120px 0;
+//     margin-bottom: 50px;
+//     background: url(../images/camping13.png) no-repeat center top;
+//     background-size: cover;
+//     background-attachment: fixed;
+//     font-family: 'Staatliches', cursive;
+//     margin: 100px 0;
+//     color: #fff; text-align: center; 
+//     text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+//       0px -4px 10px rgba(255,255,255,0.3);
+//     //   border-radius: 50% 150px / 50% 150px;
+//       &.on { opacity:1; }  
+//     p{ font-size: 40px; line-height: 2; letter-spacing: 5px; font-weight: 900;
+//         @media #{$phone}{ font-size: 25px;}}
+//     h2{ font-size: 30px;  line-height: 1.5; letter-spacing: 10px; font-weight: 900;
+//         @media #{$phone}{ font-size: 20px; }}
+// }
 
 
 #article5{
@@ -262,24 +270,24 @@ body{background: #cdf0ea;}
     }
 }
 
-.article6{
-    opacity: 0; transition: all 1s;
-    padding: 150px 0;
-    background: url(../images/camping11.jpg) no-repeat center top;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Staatliches', cursive;
-    margin: 100px 0;
-    color: #fff; text-align: center; 
-    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
-      0px -4px 10px rgba(255,255,255,0.3);
-    //   border-radius: 150px 50% / 150px 50%;
-      &.on { opacity:1; }  
-    p{ font-size: 40px; line-height: 2; letter-spacing: 5px; font-weight: 900;
-        @media #{$phone}{ font-size: 25px;}}
-    h2{ font-size: 30px;  line-height: 1.5; letter-spacing: 10px; font-weight: 900;
-        @media #{$phone}{ font-size: 22px; }}
-}
+// .article6{
+//     opacity: 0; transition: all 1s;
+//     padding: 150px 0;
+//     background: url(../images/camping11.jpg) no-repeat center top;
+//     background-size: cover;
+//     background-attachment: fixed;
+//     font-family: 'Staatliches', cursive;
+//     margin: 100px 0;
+//     color: #fff; text-align: center; 
+//     text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+//       0px -4px 10px rgba(255,255,255,0.3);
+//     //   border-radius: 150px 50% / 150px 50%;
+//       &.on { opacity:1; }  
+//     p{ font-size: 40px; line-height: 2; letter-spacing: 5px; font-weight: 900;
+//         @media #{$phone}{ font-size: 25px;}}
+//     h2{ font-size: 30px;  line-height: 1.5; letter-spacing: 10px; font-weight: 900;
+//         @media #{$phone}{ font-size: 22px; }}
+// }
 
 
 .sub2-text {

@@ -10,13 +10,13 @@ section {
 }
 
 body {
-  background: #cdf0ea;
+  background: #a9e6f5;
 }
 
 #article1 {
   display: flex;
   text-align: center;
-  margin: 50px auto;
+  margin-top: 150px;
   padding: 80px 0;
   color: #fff;
 }
@@ -35,7 +35,7 @@ body {
 #article1 .rule:hover {
   flex: 1.5;
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgb(0, 0, 0);
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
   border: 1px solid rgba(0, 0, 0, 0.35);
@@ -44,11 +44,18 @@ body {
   display: block;
   animation: fadeIn 2s;
 }
+#article1 .rule:hover .safe img {
+  display: block;
+  animation: fadeIn 2s;
+  animation: zoomIn 2s alternate;
+}
 #article1 .rule:hover .safe h1 {
+  display: none;
   transform: scale(1.2);
   color: #e91e63;
 }
 #article1 .rule:hover .safe h2 {
+  display: none;
   transform: scale(1.2);
   color: #e91e63;
 }
@@ -89,9 +96,6 @@ body {
 }
 #article1 .rule .safe ul {
   display: none;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  padding: 10px 20px;
   line-height: 1.5;
   color: #fff;
 }
@@ -100,6 +104,12 @@ body {
   font-size: 20px;
   font-weight: 700;
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+#article1 .rule .safe img {
+  display: none;
+  width: 32vw;
+  height: 60vh;
+  text-align: center;
 }
 #article1 .rule1 {
   background: url(../images/rule13.png) no-repeat center top;
@@ -140,12 +150,12 @@ body {
 .article2 {
   opacity: 0;
   transition: all 1s;
-  padding: 120px 0;
-  background: url(../images/camping10.jpg) no-repeat center top;
-  background-size: cover;
+  padding: 150px 0;
+  background: url(../images/camping14.png) no-repeat center top;
+  background-size: contain;
   background-attachment: fixed;
   font-family: "Staatliches", cursive;
-  margin: 200px 0;
+  margin-top: 300px;
   color: #fff;
   text-align: center;
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
@@ -166,7 +176,7 @@ body {
 }
 .article2 h2 {
   font-size: 30px;
-  line-height: 1.5;
+  line-height: 2;
   letter-spacing: 10px;
   font-weight: 900;
 }
@@ -177,13 +187,16 @@ body {
 }
 
 #article3 {
+  background: #f0ebc5;
+  border-radius: 100px;
   max-width: 1500px;
   margin: 100px auto;
+  padding: 50px 0;
   text-align: center;
 }
 #article3 h1 {
   font-size: 50px;
-  color: rgb(233, 18, 47);
+  color: #334257;
   font-weight: 900;
   animation: flash 3s infinite;
 }
@@ -214,7 +227,7 @@ body {
 }
 #article3 .intro {
   line-height: 2;
-  color: #000;
+  color: #334257;
   font-weight: 900;
   letter-spacing: 2px;
   font-size: 18px;
@@ -317,46 +330,6 @@ body {
   width: 50%;
 }
 
-.article4 {
-  opacity: 0;
-  transition: all 1s;
-  padding: 120px 0;
-  margin-bottom: 50px;
-  background: url(../images/camping13.png) no-repeat center top;
-  background-size: cover;
-  background-attachment: fixed;
-  font-family: "Staatliches", cursive;
-  margin: 100px 0;
-  color: #fff;
-  text-align: center;
-  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
-}
-.article4.on {
-  opacity: 1;
-}
-.article4 p {
-  font-size: 40px;
-  line-height: 2;
-  letter-spacing: 5px;
-  font-weight: 900;
-}
-@media screen and (max-width:1024px) {
-  .article4 p {
-    font-size: 25px;
-  }
-}
-.article4 h2 {
-  font-size: 30px;
-  line-height: 1.5;
-  letter-spacing: 10px;
-  font-weight: 900;
-}
-@media screen and (max-width:1024px) {
-  .article4 h2 {
-    font-size: 20px;
-  }
-}
-
 #article5 {
   display: flex;
   padding: 50px;
@@ -426,45 +399,6 @@ body {
 @media screen and (max-width:1024px) {
   #article5 .img p {
     padding: 10px 0;
-  }
-}
-
-.article6 {
-  opacity: 0;
-  transition: all 1s;
-  padding: 150px 0;
-  background: url(../images/camping11.jpg) no-repeat center top;
-  background-size: cover;
-  background-attachment: fixed;
-  font-family: "Staatliches", cursive;
-  margin: 100px 0;
-  color: #fff;
-  text-align: center;
-  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
-}
-.article6.on {
-  opacity: 1;
-}
-.article6 p {
-  font-size: 40px;
-  line-height: 2;
-  letter-spacing: 5px;
-  font-weight: 900;
-}
-@media screen and (max-width:1024px) {
-  .article6 p {
-    font-size: 25px;
-  }
-}
-.article6 h2 {
-  font-size: 30px;
-  line-height: 1.5;
-  letter-spacing: 10px;
-  font-weight: 900;
-}
-@media screen and (max-width:1024px) {
-  .article6 h2 {
-    font-size: 22px;
   }
 }
 
