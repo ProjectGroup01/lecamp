@@ -308,12 +308,9 @@
 #footer {
   width: 100%;
   position: relative;
-  /* position: fixed;
-  left: 0;
-  bottom: 0; */
-  background: #111;
-  padding: 20px 0 50px 0;
-  color: #ddd;
+  background: #fff;
+  padding: 30px 10px;
+  color: #111;
 }
 
 #footer .footer_wrap {
@@ -322,51 +319,44 @@
   position: relative;
 }
 
-#footer .footer_logo img {
-  width: 148px;
+#footer .footer_logo {
+  width: 20%;
   height: 85px;
-  position: absolute;
-  left: -60px;
+  float: left;
+  margin-right: 70px;
 }
 
-#footer .fnb {
-  width: 80%;
-  /* padding: 15px 0 0 0; */
-  overflow: hidden;
-  margin-left: 160px;
-  position: absolute;
-  /* top: -15px; */
-  left: 0px;
+#footer .footer_logo img {
+  height: 85px;
 }
 
 #footer .fnb li {
   display: inline-block;
-  color: #ddd;
+  padding-right: 10px;
   font-weight: bold;
   font-size: 16px;
 }
 
-#footer .fnb li:hover a {
-  color: #fff;
+#footer .fnb li a {
+  color: #111;
 }
 
-#footer .fnb li a {
-  padding: 0 20px;
+#footer .fnb li:hover a {
+  color: #777;
 }
 
 #footer .fnb span {
-  padding-left: 5px;
+  padding-left: 15px;
   color: #777;
   font-size: 14px;
 }
 
 .footerBottom {
-  position: relative;
   padding: 42px 0 0;
-  margin-top: 30px;
-  margin-left: 178px;
-  color: #ddd;
+  margin-left: 340px;
+  color: #111;
 }
+
 .footerBottom address {
   font-size: 15px;
   font-weight: 300;
