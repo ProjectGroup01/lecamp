@@ -21,8 +21,7 @@
 }
 
 #header:hover {
-  /* background: rgba(255, 255, 255, 1); */
-  background: #faf0d7;
+  background: #fff;
 }
 #header:hover + .hamburger-button span {
   background: #3d4146;
