@@ -21,18 +21,18 @@
 }
 
 #header:hover {
-  background: #fff;
+  /* background: rgba(255, 255, 255, 1); */
+  background: #faf0d7;
 }
-
 #header:hover + .hamburger-button span {
   background: #3d4146;
 }
 
 #header.on {
-  background: #fff;
+  /* background: rgba(255, 255, 255, 1); */
+  background: #faf0d7;
   box-shadow: 0px 8px 10px 2px rgb(0 0 0 / 10%);
 }
-
 #header.on + .hamburger-button span {
   background: #3d4146;
 }
@@ -212,7 +212,8 @@
 /* 슬라이드 메뉴 */
 .m_menu {
   position: fixed;
-  background: #7ba9c3;
+  /* background: #7ba9c3; */
+  background: #a1887f;
   top: 0;
   left: 0;
   width: 100%;
@@ -312,56 +313,65 @@
 #footer {
   width: 100%;
   position: relative;
-  background: #fff;
-  padding: 30px 10px;
-  color: #111;
+  /* position: fixed;
+  left: 0;
+  bottom: 0; */
+  background: #111;
+  padding: 20px 0 50px 0;
+  color: #ddd;
 }
 
 #footer .footer_wrap {
   width: 80%;
   margin: 0 auto;
   position: relative;
-  padding: 10px;
-}
-
-#footer .footer_logo {
-  width: 20%;
-  height: 85px;
-  float: left;
-  margin-right: 70px;
 }
 
 #footer .footer_logo img {
+  width: 148px;
   height: 85px;
+  position: absolute;
+  left: -60px;
+}
+
+#footer .fnb {
+  width: 80%;
+  /* padding: 15px 0 0 0; */
+  overflow: hidden;
+  margin-left: 160px;
+  position: absolute;
+  /* top: -15px; */
+  left: 0px;
 }
 
 #footer .fnb li {
   display: inline-block;
-  padding-right: 10px;
+  color: #ddd;
   font-weight: bold;
   font-size: 16px;
 }
 
-#footer .fnb li a {
-  color: #111;
+#footer .fnb li:hover a {
+  color: #fff;
 }
 
-#footer .fnb li:hover a {
-  color: #777;
+#footer .fnb li a {
+  padding: 0 20px;
 }
 
 #footer .fnb span {
- padding-left: 15px;
+  padding-left: 5px;
   color: #777;
   font-size: 14px;
 }
 
 .footerBottom {
+  position: relative;
   padding: 42px 0 0;
-  margin-left: 340px;
-  color: #111;
+  margin-top: 30px;
+  margin-left: 178px;
+  color: #ddd;
 }
-
 .footerBottom address {
   font-size: 15px;
   font-weight: 300;
