@@ -18,9 +18,11 @@
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/rwdindex.css" />
     <link rel="shortcut icon" href="./img/icon9.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/blitzer/jquery-ui.min.css" integrity="sha512-ibBo2Ns078qm7xZNTPbIrg5XP4pZ+Aujfmz0QFsce2f4LYpCnF1Esy6FkIRFBgXC9cY30XiS7Ui9+RpN8K7ICg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./js/prefixfree.min.js"></script>
     <title>LECAMP</title>
     <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   </head>
   <body>
     <div id="wrap">
@@ -126,21 +128,22 @@
                 <li>
                   체크인
                   <br />
-                  <span>날짜 선택</span>
+                  <span><input type="text" id="datepicker"></span>
                 </li>
                 <li>
                   체크아웃
                   <br />
-                  <span>날짜 선택</span>
+                  <span><input type="text" id="datepicker2"></span>
                 </li>
-                <li>
+                <li class="people">
                   인원
-                  <br />
-                  <span>게스트 추가</span>
+                <input class="input1" type='button' onclick='count("minus")' value='-'/>
+                <input class="input1" type='button' onclick='count("plus")' value='+'/>
+                <div id='result'>0명</div>
                 </li>
               </ul>
               <button class="search-btn" type="submit">
-                <i class="fas fa-search"></i>
+                <i class="fa-solid fa-list"></i>
               </button>
             </div>
             <div id="chek" class="checklist">
@@ -198,7 +201,7 @@
               <div id="bottom" class="chlbottom"></div>
               <!-- chlbottom -->
               <div class="chlbutton">
-                <div id="btn1" class="btn">초기화</div>
+                <div id="btn1" class="btn" click="refresh">초기화</div>
                 <div id="btn2" class="btn">검색하기</div>
               </div>
               <!-- chlbutton -->
@@ -332,6 +335,7 @@
       </footer>
       <!-- footer -->
       <script src="./js/common.js"></script>
+      <script src="./js/index.js"></script>
     </div>
   </body>
 </html>

@@ -21,14 +21,16 @@
 }
 
 #header:hover {
-  background: #fff;
+  /* background: rgba(255, 255, 255, 1); */
+  background: #faf0d7;
 }
 #header:hover + .hamburger-button span {
   background: #3d4146;
 }
 
 #header.on {
-  background: #fff;
+  /* background: rgba(255, 255, 255, 1); */
+  background: #faf0d7;
   box-shadow: 0px 8px 10px 2px rgb(0 0 0 / 10%);
 }
 #header.on + .hamburger-button span {
@@ -144,10 +146,14 @@
 /* 사이드 메뉴 열기 버튼 */
 .hamburger-button {
   display: inline-block;
+  /* position: absolute; */
   position: fixed;
   transition: 0.3s ease-in-out;
   width: 35px;
   height: 30px;
+  /* top: 50%;
+  right: 20px;
+  transform: translateY(-50%); */
   top: 30px;
   right: 3%;
   z-index: 999999;
@@ -206,7 +212,8 @@
 /* 슬라이드 메뉴 */
 .m_menu {
   position: fixed;
-  background: #7ba9c3;
+  /* background: #7ba9c3; */
+  background: #a1887f;
   top: 0;
   left: 0;
   width: 100%;
@@ -306,9 +313,12 @@
 #footer {
   width: 100%;
   position: relative;
-  background: #fff;
+  /* position: fixed;
+  left: 0;
+  bottom: 0; */
+  background: #111;
   padding: 20px 0 50px 0;
-  color: #111;
+  color: #ddd;
 }
 
 #footer .footer_wrap {
@@ -318,7 +328,7 @@
 }
 
 #footer .footer_logo img {
-  width: 14%;
+  width: 148px;
   height: 85px;
   position: absolute;
   left: -60px;
@@ -326,17 +336,19 @@
 
 #footer .fnb {
   width: 80%;
+  /* padding: 15px 0 0 0; */
   overflow: hidden;
-  margin-left: 200px;
+  margin-left: 160px;
   position: absolute;
+  /* top: -15px; */
   left: 0px;
 }
 
 #footer .fnb li {
   display: inline-block;
+  color: #ddd;
   font-weight: bold;
   font-size: 16px;
-  color: #111;
 }
 
 #footer .fnb li:hover a {
@@ -357,7 +369,7 @@
   position: relative;
   padding: 42px 0 0;
   margin-top: 30px;
-  margin-left: 218px;
+  margin-left: 178px;
   color: #ddd;
 }
 .footerBottom address {
