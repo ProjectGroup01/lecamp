@@ -4,12 +4,10 @@
 #section {
   /* max-width: 1920px; */
   margin: 0 auto;
-  /* background: #111; */
 }
 
 article {
   overflow: hidden;
-  /* padding-bottom: 80px; */
 }
 
 /* 컨텐츠구역 1 */
@@ -20,7 +18,7 @@ article {
   min-height: 80vh;
   transform: translateX(-50%);
   box-sizing: border-box;
-  background: #cdf0ea;
+  background: url(../img/sky.jpg) center bottom;
 }
 
 .cont1 .container {
