@@ -88,7 +88,7 @@ article {
 /* 컨텐츠구역 2 */
 .cont2 {
   background: #ecf2ff;
-  padding: 10px 0;
+  padding: 30px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -470,6 +470,7 @@ article {
   height: 566px;
   background: url("../img/cont3_img1.jpg") no-repeat center center;
   padding: 70px 60px;
+  border-radius: 15px;
 }
 
 .cont3 .cont3_inner01 .cont3_cont01 {
@@ -537,6 +538,11 @@ article {
   min-height: 430px;
   width: 282px;
   margin: 40px 0 0 24px;
+  transition: all 0.3s;
+}
+
+.cont3 .cont3_inner02 .cont3_list > li:hover {
+  box-shadow: 0px 1px 10px 0px rgba(159, 162, 177, 0.8);
 }
 
 .cont3 .cont3_inner02 .cont3_list li:first-child {
@@ -553,6 +559,11 @@ article {
   display: block;
   width: 100%;
   object-fit: cover;
+  transition: all 0.3s;
+}
+
+.cont3 .cont3_inner02 .cont3_list li .img img:hover {
+  filter: blur(2px);
 }
 
 .cont3 .cont3_inner02 .cont3_list li .htl {
