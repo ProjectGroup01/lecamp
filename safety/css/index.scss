@@ -10,12 +10,12 @@ $phone: "screen and (max-width:1024px)";
 
 section { font-family: 'Nanum Gothic', sans-serif;}
 
-body{background: #000;}
+body{background: #cdf0ea;}
 
 #article1{
     display: flex; text-align:center;
-    margin: 100px auto;
-    padding: 100px 0;
+    margin: 50px auto;
+    padding: 80px 0;
     color: #fff;
 
 .rule{
@@ -31,14 +31,14 @@ body{background: #000;}
     
     &:hover{flex: 1.5;
         cursor: pointer;
-        background: rgba(0,0,0,0.7);
+        background: rgba(0,0,0,0.9);
         -webkit-backdrop-filter: blur(2px);
         backdrop-filter: blur(2px);
         border: 1px solid rgba(0,0,0,0.35);
      .safe{
         ul{ display:block; animation: fadeIn 2s; }
-        h1{ transform: scale(1.3); color: #e91e63; }
-        h2{ transform: scale(1.3); color: #e91e63;}
+        h1{ transform: scale(1.2); color: #e91e63; }
+        h2{ transform: scale(1.2); color: #e91e63;}
      }
 
     }
@@ -46,7 +46,7 @@ body{background: #000;}
 .safe{
     position:relative; 
     .intro{
-        animation: ani 1s both 0.5s;
+        animation: ani 3s both 0.5s infinite;
         margin: 20px 0; 
         transform:translateY(-100%); opacity:0
     }
@@ -56,7 +56,7 @@ body{background: #000;}
     }
     h1{
     font-weight: 900;
-    font-size: 40px;
+    font-size: 25px;
     line-height: 2em;
     margin: 5px;
     font-family: HWTArtz;
@@ -98,7 +98,7 @@ body{background: #000;}
 .rule1{
     background: url(../images/rule13.png)  no-repeat center top; 
     background-size: cover; 
-    li{font-size: 17px; padding: 15px 0; font-weight: 600; line-height: 2; letter-spacing: 3px;
+    li{font-size: 16px; padding: 15px 0; font-weight: 600; line-height: 2; letter-spacing: 3px;
         text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
         0px -4px 10px rgba(255,255,255,0.3);
     }
@@ -116,7 +116,7 @@ body{background: #000;}
 .rule3{
     background: url(../images/rule15.png) no-repeat center top; 
     background-size: cover;
-    li{ font-size: 17px; padding: 6px 0; letter-spacing: 4px; font-weight: 600; line-height: 2;
+    li{ font-size: 16px; padding: 6px 0; letter-spacing: 4px; font-weight: 600; line-height: 1.5;
         text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
         0px -4px 10px rgba(255,255,255,0.3);
     }
@@ -127,16 +127,16 @@ body{background: #000;}
 
 .article2{
     opacity: 0; transition: all 1s;
-    padding: 200px 0;
-    background: url(../images/camping9.jpg) no-repeat center top;
+    padding: 120px 0;
+    background: url(../images/camping10.jpg) no-repeat center top;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Staatliches', cursive;
-    margin: 100px 100px;
+    margin: 200px 0;
     color: #fff; text-align: center; 
     text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
       0px -4px 10px rgba(255,255,255,0.3);
-      border-radius: 150px 50% / 150px 50%;
+    //   border-radius: 150px 50% / 150px 50%;
     &.on { opacity:1; }  
     p{ font-size: 40px; line-height: 2; letter-spacing: 5px; font-weight: 900;
         @media #{$phone}{ font-size: 25px;}}
@@ -148,10 +148,10 @@ body{background: #000;}
 
 #article3{
     max-width: 1500px;
-    margin: 150px auto;
+    margin: 100px auto;
     text-align: center;
-    h1{ font-size: 50px; color: rgb(247, 177, 49); font-weight: 900;
-        animation: flash 2s infinite; 
+    h1{ font-size: 50px; color: rgb(233, 18, 47); font-weight: 900;
+        animation: flash 3s infinite; 
         @media #{$phone}{ animation: none; font-size: 30px; margin: 0;} 
     }
 
@@ -164,7 +164,7 @@ body{background: #000;}
     .list li:hover{
         animation: none;
     }    
-    .intro { line-height: 2; color: #fff; font-weight: 600; letter-spacing: 2px;
+    .intro { line-height: 2; color: #000; font-weight: 900; letter-spacing: 2px;
              font-size: 18px;
         @media #{$phone}{ display: none; }}
     
@@ -174,7 +174,7 @@ body{background: #000;}
         @media #{$phone}{ animation: none; padding: 10px; flex-wrap: wrap;}
    
         li{ flex:1 1 25%; margin: 0 20px;
-            background: #ffebee;
+            background: #fffeeb;
             box-shadow: rgba(255, 255, 255, 0.9) 0px 0px 20px, rgba(0, 0, 0, 0.22) 0px 0px 5px;
             &:hover {
                 animation: slide 0.5s normal both;
@@ -212,17 +212,17 @@ body{background: #000;}
 
 .article4{
     opacity: 0; transition: all 1s;
-    padding: 200px 0;
+    padding: 120px 0;
     margin-bottom: 50px;
-    background: url(../images/camping10.jpg) no-repeat center top;
+    background: url(../images/camping13.png) no-repeat center top;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Staatliches', cursive;
-    margin: 100px 100px;
+    margin: 100px 0;
     color: #fff; text-align: center; 
     text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
       0px -4px 10px rgba(255,255,255,0.3);
-      border-radius: 50% 150px / 50% 150px;
+    //   border-radius: 50% 150px / 50% 150px;
       &.on { opacity:1; }  
     p{ font-size: 40px; line-height: 2; letter-spacing: 5px; font-weight: 900;
         @media #{$phone}{ font-size: 25px;}}
@@ -237,7 +237,8 @@ body{background: #000;}
     color: #fff;
     text-align: center;
     width: 98%;
-    margin: 150px auto;
+    margin-top: 50px;
+    margin: 0 auto;
     border: 2px solid #fff;
     border-radius: 1px;
     // animation: pulse 2s alternate infinite;
@@ -263,16 +264,16 @@ body{background: #000;}
 
 .article6{
     opacity: 0; transition: all 1s;
-    padding: 200px 0;
+    padding: 150px 0;
     background: url(../images/camping11.jpg) no-repeat center top;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Staatliches', cursive;
-    margin: 100px 100px;
+    margin: 100px 0;
     color: #fff; text-align: center; 
     text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
       0px -4px 10px rgba(255,255,255,0.3);
-      border-radius: 150px 50% / 150px 50%;
+    //   border-radius: 150px 50% / 150px 50%;
       &.on { opacity:1; }  
     p{ font-size: 40px; line-height: 2; letter-spacing: 5px; font-weight: 900;
         @media #{$phone}{ font-size: 25px;}}
@@ -289,8 +290,8 @@ body{background: #000;}
         padding: 50px 0;
         overflow: hidden;
         transition: 0.5s;
-        font-size: 80px;
-        color: #fff;
+        font-size: 90px;
+        color: #000;
         font-family: "Rubik Vinyl", cursive;
 
         .sub2-wrap {
