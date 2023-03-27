@@ -623,6 +623,7 @@ article {
   width: 588px;
   height: 650px;
   display: block;
+  border-radius: 15px;
 }
 
 .cont4 .cont4_list .list02 {
@@ -674,6 +675,7 @@ article {
 .cont4 .cont4_list ul li .img02 img {
   width: 130px;
   height: 130px;
+  border-radius: 15px;
 }
 
 .cont4 .cont4_list ul li .item_title {
