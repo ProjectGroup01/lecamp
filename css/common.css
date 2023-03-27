@@ -306,9 +306,9 @@
 #footer {
   width: 100%;
   position: relative;
-  background: #111;
+  background: #fff;
   padding: 20px 0 50px 0;
-  color: #ddd;
+  color: #111;
 }
 
 #footer .footer_wrap {
@@ -334,9 +334,9 @@
 
 #footer .fnb li {
   display: inline-block;
-  color: #ddd;
   font-weight: bold;
   font-size: 16px;
+  color: #111;
 }
 
 #footer .fnb li:hover a {
