@@ -1,27 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap");
 * {
   margin: 0 auto;
 }
 
 section {
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 body {
-  background: #7dd6f1;
+  background: #e4fbff;
 }
 
 .article1 {
-  opacity: 0;
-  transition: all 1s;
-  padding: 150px 0;
-  background: url(../images/camping14.png) no-repeat center top;
+  padding: 160px 0;
+  background: url(../images/camping14.png) no-repeat center bottom;
   background-size: cover;
   background-attachment: fixed;
   font-family: "Staatliches", cursive;
-  margin-top: 300px;
+  margin-top: 200px;
   color: #fff;
   text-align: center;
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
@@ -29,13 +27,14 @@ body {
 @media screen and (max-width:1024px) {
   .article1 {
     padding: 100px 0;
+    margin: 150px 0px;
   }
 }
 .article1.on {
   opacity: 1;
 }
 .article1 p {
-  font-size: 40px;
+  font-size: 45px;
   line-height: 2;
   letter-spacing: 5px;
   font-weight: 900;
@@ -46,7 +45,7 @@ body {
   }
 }
 .article1 h2 {
-  font-size: 30px;
+  font-size: 50px;
   line-height: 2;
   letter-spacing: 10px;
   font-weight: 900;
@@ -58,15 +57,22 @@ body {
 }
 
 #article2 {
+  opacity: 0;
+  transition: all 1s;
   display: flex;
   text-align: center;
   margin-top: 150px;
   padding: 80px 0;
   color: #fff;
 }
+#article2.on {
+  opacity: 1;
+}
 @media screen and (max-width:1024px) {
   #article2 {
     display: block;
+    margin-top: 50px;
+    opacity: 1;
   }
 }
 #article2 .rule {
@@ -119,7 +125,7 @@ body {
 #article2 .rule .safe .intro {
   animation: ani 3s both 0.5s infinite;
   margin: 20px 0;
-  transform: translateY(-100%);
+  transform: translateY(-50%);
   opacity: 0;
 }
 @keyframes ani {
@@ -213,6 +219,7 @@ body {
   margin: 100px auto;
   padding: 50px 0;
   text-align: center;
+  box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
 }
 #article3 h1 {
   font-size: 50px;
@@ -272,8 +279,6 @@ body {
 #article3 .list li {
   flex: 1 1 25%;
   margin: 0 20px;
-  background: #fffeeb;
-  box-shadow: rgba(255, 255, 255, 0.9) 0px 0px 20px, rgba(0, 0, 0, 0.22) 0px 0px 5px;
 }
 #article3 .list li:hover {
   animation: slide 0.5s normal both;
@@ -293,20 +298,14 @@ body {
 #article3 .list li .box {
   height: auto;
   padding: 20px 0;
-  background: #ffebee;
-  border-radius: 1px;
-  box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 20px, rgba(0, 0, 0, 0.22) 0px 0px 5px;
+  background: #fbdaff;
+  border-radius: 50px;
+  box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
   transition: all 0.5s;
 }
 #article3 .list li .box:hover {
   background: rgb(233, 97, 79);
   color: #fff;
-}
-@media screen and (max-width:1024px) {
-  #article3 .list li .box {
-    border-radius: 1px;
-    box-shadow: none;
-  }
 }
 #article3 .list li .box img {
   border-radius: 50%;
@@ -350,74 +349,85 @@ body {
   width: 50%;
 }
 
-#article5 {
+#article4 {
+  opacity: 0;
+  transition: all 1s;
   display: flex;
   padding: 50px;
-  background-color: #000;
+  background-color: rgb(253, 221, 58);
   color: #fff;
   text-align: center;
   width: 98%;
   margin-top: 50px;
   margin: 0 auto;
   border: 2px solid #fff;
-  border-radius: 1px;
+  border-radius: 20px;
   animation: slide-top 2s infinite;
   box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 20px, rgba(0, 0, 0, 0.22) 0px 0px 5px;
 }
-#article5:hover {
+#article4.on {
+  opacity: 1;
+}
+@media screen and (max-width:1024px) {
+  #article4 {
+    opacity: 1;
+  }
+}
+#article4:hover {
   animation: none;
 }
 @media screen and (max-width:1024px) {
-  #article5 {
+  #article4 {
     padding: 10px;
     animation: none;
   }
 }
-#article5 .movie {
+#article4 .movie {
   margin: 0 auto;
 }
-#article5 h1 {
+#article4 h1 {
   padding: 10px 0;
   font-size: 35px;
   font-weight: bold;
+  color: #000;
 }
 @media screen and (max-width:1024px) {
-  #article5 h1 {
+  #article4 h1 {
     font-size: 20px;
   }
 }
-#article5 h2 {
+#article4 h2 {
   padding: 20px;
-  color: #e91e63;
+  color: #767676;
   font-size: 20px;
   font-weight: 600;
 }
 @media screen and (max-width:1024px) {
-  #article5 h2 {
+  #article4 h2 {
     font-size: 14px;
   }
 }
-#article5 strong {
+#article4 strong {
   font-size: 25px;
 }
-#article5 .img {
+#article4 .img {
   padding: 20px 0;
   cursor: pointer;
   display: flex;
 }
 @media screen and (max-width:1024px) {
-  #article5 .img {
+  #article4 .img {
     display: block;
     width: 100%;
     text-align: center;
   }
 }
-#article5 .img p {
+#article4 .img p {
   flex: 1;
   margin: 0 30px;
 }
 @media screen and (max-width:1024px) {
-  #article5 .img p {
+  #article4 .img p {
     padding: 10px 0;
   }
 }

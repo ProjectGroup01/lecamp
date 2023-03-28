@@ -12,24 +12,34 @@ $(window).on('load', function(){
 
 //스크롤 이벤트 
 
-//article1 부분
+//article2, article4 부분 
 
-let article1Near = $('.article1').offset().top - $(window).height()/2
+let article2Near = $('.article2').offset().top - $(window).height()/2
+let article4Near = $('.article4').offset().top - $(window).height()/2
 
 $(window).on('scroll', function(){
    let sct =  $(this).scrollTop()
-   if(sct >= article1Near){
-    $('.article1').addClass('on')
+   if(sct >= article2Near){
+    $('.article2').addClass('on')
    }else{
-    $('.article1').removeClass('on')
+    $('.article2').removeClass('on')
+   }
+});
+
+$(window).on('scroll', function(){
+   let sct =  $(this).scrollTop()
+   if(sct >= article4Near){
+    $('.article4').addClass('on')
+   }else{
+    $('.article4').removeClass('on')
    }
 });
 
 
 
-// article5 이미지 클릭하면 모달창에서 크게 보기
+// article4 이미지 클릭하면 모달창에서 크게 보기
 
-$('.article5 .movie .img img').on('click', function(){
+$('.article4 .movie .img img').on('click', function(){
     let src = $(this).attr('data-src')
     let modal = '<div class="modal">'
     modal += `<div class="imgbox">`

@@ -1,45 +1,46 @@
 $phone: "screen and (max-width:1024px)"; 
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
 
 
 // @media #{$phone}{ }
 
 *{ margin: 0 auto;}
 
-section { font-family: 'Nanum Gothic', sans-serif;}
+section { font-family: 'Noto Sans KR', sans-serif;}
 
-body{background: #7dd6f1;}
+body{background: #e4fbff;}
 // body{ background:url(../images/background1.jpg) no-repeat;}
 
 .article1{
-    opacity: 0; transition: all 1s;
-    padding: 150px 0;
-    background: url(../images/camping14.png) no-repeat center top;
+    padding: 160px 0;
+    background: url(../images/camping14.png) no-repeat center bottom;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Staatliches', cursive;
-    margin-top: 300px;
+    margin-top: 200px;
     color: #fff; text-align: center; 
     text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
       0px -4px 10px rgba(255,255,255,0.3);
-      @media #{$phone}{ padding: 100px 0;}  
+      @media #{$phone}{ padding: 100px 0; margin: 150px 0px;}  
     &.on { opacity:1; }  
-    p{ font-size: 40px; line-height: 2; letter-spacing: 5px; font-weight: 900;
+    p{ font-size: 45px; line-height: 2; letter-spacing: 5px; font-weight: 900;
         @media #{$phone}{ font-size: 25px;}}
-    h2{ font-size: 30px;  line-height: 2; letter-spacing: 10px; font-weight: 900;
+    h2{ font-size: 50px;  line-height: 2; letter-spacing: 10px; font-weight: 900;
         @media #{$phone}{ font-size: 20px; }}    
 }
 
 
 
 #article2{
+    opacity: 0; transition: all 1s;
     display: flex; text-align:center;
     margin-top: 150px;
     padding: 80px 0;
     color: #fff;
-    @media #{$phone}{ display: block; }
+    &.on { opacity:1; }  
+    @media #{$phone}{ display: block; margin-top: 50px; opacity: 1;}
 
 .rule{
     position: relative;
@@ -61,7 +62,7 @@ body{background: #7dd6f1;}
         border: 1px solid rgba(0,0,0,0.35);
      .safe{
         ul{ display:block; animation: fadeIn 2s; }
-        img{ display:block; animation: fadeIn 2s; animation: zoomIn 2s alternate; }
+        img{ display:block; animation: fadeIn 2s; animation: zoomIn 2s alternate;}
         h1{ display: none; transform: scale(1.2); color: #e91e63; }
         h2{ display: none; transform: scale(1.2); color: #e91e63;}
      }
@@ -73,7 +74,7 @@ body{background: #7dd6f1;}
     .intro{
         animation: ani 3s both 0.5s infinite;
         margin: 20px 0; 
-        transform:translateY(-100%); opacity:0;
+        transform:translateY(-50%); opacity:0;
         
     }
     @keyframes ani {
@@ -159,6 +160,7 @@ body{background: #7dd6f1;}
     margin: 100px auto;
     padding: 50px 0;
     text-align: center;
+    box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
     h1{ font-size: 50px; color: #334257; font-weight: 900;
         animation: flash 3s infinite; 
         @media #{$phone}{ animation: none; font-size: 30px; margin: 0;} 
@@ -183,8 +185,6 @@ body{background: #7dd6f1;}
         @media #{$phone}{ animation: none; padding: 10px; flex-wrap: wrap;}
    
         li{ flex:1 1 25%; margin: 0 20px;
-            background: #fffeeb;
-            box-shadow: rgba(255, 255, 255, 0.9) 0px 0px 20px, rgba(0, 0, 0, 0.22) 0px 0px 5px;
             &:hover {
                 animation: slide 0.5s normal both;
                 @media #{$phone}{ animation: none;}
@@ -194,11 +194,10 @@ body{background: #7dd6f1;}
             @media #{$phone}{ flex:1 1 40%; margin: 5px 5px; animation: none;}
             
             .box{
-                 height: auto; padding: 20px 0; background: #ffebee;
-                border-radius: 1px;  box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 20px, rgba(0, 0, 0, 0.22) 0px 0px 5px;
+                height: auto; padding: 20px 0; background: #fbdaff;
+                border-radius: 50px; box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
                 transition: all 0.5s;
                 &:hover{ background: rgb(233, 97, 79); color: #fff;}
-                @media #{$phone}{  border-radius: 1px; box-shadow: none;}
                 img{border-radius: 50%; padding: 20px 0; text-align: center; 
                     @media #{$phone}{ width: 100%; padding: 10px 0; }
                 }
@@ -220,29 +219,32 @@ body{background: #7dd6f1;}
 }
 
 
-#article5{
+#article4{
+    opacity: 0; transition: all 1s;
     display: flex; padding: 50px;
-    background-color: #000;
+    background-color: rgb(253, 221, 58);
     color: #fff;
     text-align: center;
     width: 98%;
     margin-top: 50px;
     margin: 0 auto;
     border: 2px solid #fff;
-    border-radius: 1px;
+    border-radius: 20px;
     animation: slide-top 2s infinite; 
     box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 20px, rgba(0, 0, 0, 0.22) 0px 0px 5px;
+    &.on { opacity:1; } 
+    @media #{$phone}{ opacity: 1; }
 &:hover{
     animation: none;
 }    
     @media #{$phone}{ padding: 10px; animation: none;}
     .movie{ margin: 0 auto; }
-    h1{ padding: 10px 0; font-size: 35px; font-weight: bold;
+    h1{ padding: 10px 0; font-size: 35px; font-weight: bold; color: #000;
         @media #{$phone}{ font-size: 20px;}}
-    h2{ padding: 20px; color:#e91e63; font-size: 20px; font-weight: 600;
+    h2{ padding: 20px; color: #767676; font-size: 20px; font-weight: 600;
         @media #{$phone}{ font-size: 14px;}}
     strong{font-size: 25px;}
-    .img{ padding: 20px 0; cursor: pointer; display: flex;
+    .img{  padding: 20px 0; cursor: pointer; display: flex;
         @media #{$phone}{ display: block; width: 100%;  text-align: center;}
      p{ flex: 1; margin: 0 30px;
         @media #{$phone}{ padding: 10px 0;}
