@@ -188,7 +188,7 @@
   background-color: #fff;
 }
 .hamburger-button.active:hover span {
-  background-color: #3d4146;;
+  background-color: #3d4146;
 }
 
 .hamburger-button.active span:nth-child(1),
@@ -207,7 +207,7 @@
 /* 슬라이드 메뉴 */
 .m_menu {
   position: fixed;
-  background: #7ba9c3; 
+  background: #7ba9c3;
   top: 0;
   left: 0;
   width: 100%;
@@ -307,6 +307,7 @@
 #footer {
   width: 100%;
   position: relative;
+  /* background: #f4f4f4; */
   padding: 30px 10px;
   color: #111;
 }

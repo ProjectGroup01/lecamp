@@ -23,6 +23,7 @@
     <title>LECAMP</title>
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
   </head>
   <body>
     <div id="wrap">
@@ -125,28 +126,28 @@
 
         
         
-        <article class="cont3">
+        <article class="cont2">
           <div class="container">
-            <div class="cont3_inner01">
-              <div class="cont3_cont01">
+            <div class="cont2_inner01">
+              <div class="cont2_cont01">
                 <strong class="tit">2023<br />주목해야 할 <br />캠핑장소</strong>
               </div>
-              <div class="cont3_img">
-                <span class="cont3_imgtxt">
+              <div class="cont2_img">
+                <span class="cont2_imgtxt">
                   <a href="#">캠핑을 결심하기에 좋은 장소</a>
                 </span>
-                <span class="cont3_imgtxt">
+                <span class="cont2_imgtxt">
                   <a href="#">캠핑을 가장 캠핑답게 하는 방법</a>
                 </span>
-                <span class="cont3_imgtxt">
+                <span class="cont2_imgtxt">
                   <a href="#">따뜻한 봄을 위한 캠핑</a>
                 </span>
               </div>
             </div>
 
-            <div class="cont3_inner02">
-              <div class="cont3_cont02">
-                <ul class="cont3_list">
+            <div class="cont2_inner02">
+              <div class="cont2_cont02">
+                <ul class="cont2_list">
                   <li>
                     <div class="img">
                       <img src="./img/cont3_img2.jpg" alt="" />
@@ -188,9 +189,9 @@
             </div>
           </div>
         </article>
-        <!-- article3 -->
+        <!-- article2 -->
 
-        <article class="cont2">
+        <article class="cont3">
           <div class="container">
             <div class="search">
               <ul class="searchUl">
@@ -206,9 +207,9 @@
                 </li>
                 <li class="people">
                   인원
-                <input class="input1" type='button' onclick='count("minus")' value='-'/>
-                <input class="input1" type='button' onclick='count("plus")' value='+'/>
-                <div id='result'>0명</div>
+                <button v-on:click="countDown(1)">-</button>
+                <button v-on:click="countUp(1)">+</button>
+                <div id='result'>{{ count }}명</div>
                 </li>
               </ul>
               <button class="search-btn" type="submit">
@@ -281,7 +282,7 @@
             <!-- checklist -->
           </div>
         </article>
-        <!-- article2 -->
+        <!-- article3 -->
        
         <article class="cont4">
           <div class="container">

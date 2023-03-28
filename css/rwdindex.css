@@ -13,50 +13,128 @@
   .cont3 {
     padding: 50px 0 50px 0;
   }
+
   .cont2 {
+    padding-bottom: 100px;
     animation: none;
     opacity: 1;
   }
   .cont2.animate {
     animation: none;
+  }
+  .cont2 .container {
+    position: relative;
+    width: 95%;
+    height: 600px;
+  }
+
+  .cont3 {
+    animation: none;
     opacity: 1;
   }
-  .cont2 span {
+  .cont3.animate {
+    animation: none;
+    opacity: 1;
+  }
+  .cont3 span {
     display: inline-block;
     opacity: 1;
     filter: none;
   }
-  .cont2.animate span {
+  .cont3.animate span {
     animation: none;
   }
-
+  .cont3 .searchUl {
+    border-radius: 10px;
+  }
+  .cont3 .searchUl li {
+    width: 25%;
+    padding: 30px 30px 0px 20px;
+  }
+  .cont3 .searchUl li:last-child {
+    width: 50%;
+  }
   .intro-wrapper {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 0 127px;
   }
-
-  .cont2 span {
+  .cont3 .search {
+    width: 95%;
+  }
+  .cont3 .checklist {
+    width: 95%;
+    border-radius: 10px;
+  }
+  .cont3 .checklist.on {
+    display: block;
+  }
+  .cont3 .checklist span {
+    float: left;
+  }
+  .cont3 .group {
+    padding: 15px;
+  }
+  
+  .cont3 .group1 {
+    margin-top: 0px;
+  }
+  
+  .cont3 .group3 {
+    margin-bottom: 10px;
+  }
+  .cont3 span {
     color: #fff;
     font-size: 70px;
     display: block;
     padding-bottom: 30px;
   }
-  .cont3 {
-    padding-bottom: 100px;
-    animation: none;
-    opacity: 1;
+  .cont3 .result {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
-  .cont3.animate {
-    animation: none;
+  .cont3 .result .resultbox {
+    width: 100%;
   }
-  .cont3 .container {
-    position: relative;
-    width: 95%;
-    height: 600px;
-    background: #222;
-    border-radius: 50% 20% / 10% 40%;
+  .cont3 .chlbutton {
+    width: 90%;
+    margin:0 auto;
+    padding: 20px 0;
+  }
+  .cont3 .chlbutton .btn {
+    margin: 0px;
+    background: #ff4f4f;
+    padding: 0px;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    box-shadow: 0 10px 30px rgba(159, 162, 177, 0.8);
+    transition: all 0.4s;
+    flex: 1;
+    text-align: center;
+    height: 40px;
+    line-height: 2.6em;
+  }
+  .cont3 .chlbutton .btn:first-child {
+    margin-right: 10px;
+  }
+  .cont3 .chlbutton .btn:hover {
+    transform: scale(1);
+  }
+  .cont3 .result .resultbox .bottomWrap .contentsBottom {
+    height: 138px;
+    display: flex;
+  }
+  .cont3 .result .resultbox .bottomWrap .contentsBottom h2 {
+    font-size: 15px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+  }
+  .cont3 .result .resultbox .bottomWrap .contentsBottom p {
+    color: #767676;
+    font-size: 13px;
   }
   #footer .footer_wrap {
   width: 70%;
@@ -117,19 +195,17 @@
 }
 
   @media screen and (max-width: 768px) {
-    .cont2 span {
+    .cont3 span {
       color: #fff;
       font-size: 64px;
       display: block;
       padding-bottom: 30px;
     }
 
-    .cont3 .container {
+    .cont2 .container {
       position: relative;
       width: 95%;
       height: 500px;
-      background: #222;
-      border-radius: 50% 20% / 10% 40%;
     }
   }
 }

@@ -65,14 +65,14 @@ $(window).scroll( function(){
   });
   
   $("#btn1").on("click", function() {
-    $(".cont2 .result").removeClass("on");
+    $(".cont3 .result").removeClass("on");
     $(".chlbottom p").remove();
   });
   $("#btn2").on("click", function() {
-    $(".cont2 .result").addClass("on");
+    $(".cont3 .result").addClass("on");
   });
   $(".cont2 .search-btn").on("click", function() {
-    $(".cont2 .search-btn").toggleClass("on");
+    $(".cont3 .search-btn").toggleClass("on");
   });
   
   $("#btn2").click(function() {
@@ -153,63 +153,20 @@ $(window).scroll( function(){
   
   })(jQuery);
 
-  
-
-
-
-  $(document).ready(function () { //예약 인원수 추가/감소
-    $('.ticket-list .minus').bind('click', function (e) {
-        var v = $(this).next().find('input');
-        if (v.val() == '' || isNaN(v.val())) v.val(0);
-        if (v.val() > 0) {
-            v.val(v.val() - 1);
-        };
-        if (v.val() == 0) {
-            v.addClass('zero');
-            v.parent().prev().addClass('zero');
-        }
-    });
-    $('.ticket-list .plus').bind('click', function (e) {
-        var v = $(this).prev().find('input');
-        if (v.val() == '' || isNaN(v.val())) v.val(0);
-        v.val(parseFloat(v.val()) + 1);
-        v.removeClass('zero');
-        v.parent().prev().removeClass('zero');
-    });
- 
-    $('.popwrap .btn-close, .popwrap .btn-close2').click(function (e) {
-        e.preventDefault();
-        parent.$.colorbox.close();
-    });
- 
-    $('html').on('focus', 'input:not(".readonly")', function () {
-        //this.value = '';
-        $(this).addClass('focus');
- 
-        if ($(this).hasClass('zero') && $(this).hasClass('focus')) {
-            /*$(this).removeClass('zero');
-            $(this).parent().parent().find('.minus').removeClass('zero');*/
-        }
-    }).on('blur', '.ticket-list input', function () {
-        if ($(this).val() == '0') {
-            $(this).addClass('zero');
-            $(this).parent().parent().find('.minus').addClass('zero');
-        }
-    });
-});
-function count(type)  {
-    const resultElement = document.getElementById('result');
-    
-    let number = resultElement.innerText;
-    
-    if(type === 'plus') {
-      number = parseInt(number) + 1;
-    }else if(type === 'minus')  {
-      number = parseInt(number) - 1;
+  new Vue({
+    el: '.people',
+    data: {
+      count:0
+    },
+    methods: {
+      countUp: function(value) {
+        this.count += value;
+      },
+      countDown: function(value) {
+        this.count -= value;
+      },
     }
-    
-    // 결과 출력
-    resultElement.innerText = number + '명';
-  }
+  })
+  
 
 
