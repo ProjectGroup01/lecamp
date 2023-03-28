@@ -133,7 +133,6 @@
   padding: 0 30px;
   font-size: 18px;
   font-weight: 600;
-  color: #fff;
   position: relative;
   margin: 45px 0;
   transition: all 0.3s;
@@ -308,7 +307,6 @@
 #footer {
   width: 100%;
   position: relative;
-  background: #fff;
   padding: 30px 10px;
   color: #111;
 }
