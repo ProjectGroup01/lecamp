@@ -13,14 +13,63 @@ body {
   background: #7dd6f1;
 }
 
-#article1 {
+.article1 {
+  opacity: 0;
+  transition: all 1s;
+  padding: 150px 0;
+  background: url(../images/camping14.png) no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Staatliches", cursive;
+  margin-top: 300px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+@media screen and (max-width:1024px) {
+  .article1 {
+    padding: 100px 0;
+  }
+}
+.article1.on {
+  opacity: 1;
+}
+.article1 p {
+  font-size: 40px;
+  line-height: 2;
+  letter-spacing: 5px;
+  font-weight: 900;
+}
+@media screen and (max-width:1024px) {
+  .article1 p {
+    font-size: 25px;
+  }
+}
+.article1 h2 {
+  font-size: 30px;
+  line-height: 2;
+  letter-spacing: 10px;
+  font-weight: 900;
+}
+@media screen and (max-width:1024px) {
+  .article1 h2 {
+    font-size: 20px;
+  }
+}
+
+#article2 {
   display: flex;
   text-align: center;
   margin-top: 150px;
   padding: 80px 0;
   color: #fff;
 }
-#article1 .rule {
+@media screen and (max-width:1024px) {
+  #article2 {
+    display: block;
+  }
+}
+#article2 .rule {
   position: relative;
   z-index: 21;
   overflow: visible;
@@ -32,7 +81,12 @@ body {
   align-items: center;
   overflow: hidden;
 }
-#article1 .rule:hover {
+@media screen and (max-width:1024px) {
+  #article2 .rule {
+    height: 70vh;
+  }
+}
+#article2 .rule:hover {
   flex: 1.5;
   cursor: pointer;
   background: rgb(0, 0, 0);
@@ -40,29 +94,29 @@ body {
   backdrop-filter: blur(2px);
   border: 1px solid rgba(0, 0, 0, 0.35);
 }
-#article1 .rule:hover .safe ul {
+#article2 .rule:hover .safe ul {
   display: block;
   animation: fadeIn 2s;
 }
-#article1 .rule:hover .safe img {
+#article2 .rule:hover .safe img {
   display: block;
   animation: fadeIn 2s;
   animation: zoomIn 2s alternate;
 }
-#article1 .rule:hover .safe h1 {
+#article2 .rule:hover .safe h1 {
   display: none;
   transform: scale(1.2);
   color: #e91e63;
 }
-#article1 .rule:hover .safe h2 {
+#article2 .rule:hover .safe h2 {
   display: none;
   transform: scale(1.2);
   color: #e91e63;
 }
-#article1 .rule .safe {
+#article2 .rule .safe {
   position: relative;
 }
-#article1 .rule .safe .intro {
+#article2 .rule .safe .intro {
   animation: ani 3s both 0.5s infinite;
   margin: 20px 0;
   transform: translateY(-100%);
@@ -74,9 +128,9 @@ body {
     opacity: 1;
   }
 }
-#article1 .rule .safe h1 {
+#article2 .rule .safe h1 {
   font-weight: 900;
-  font-size: 25px;
+  font-size: 30px;
   line-height: 2em;
   margin: 5px;
   font-family: HWTArtz;
@@ -84,7 +138,7 @@ body {
   color: #fff;
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
 }
-#article1 .rule .safe h2 {
+#article2 .rule .safe h2 {
   font-weight: 900;
   font-size: 20px;
   margin: 10px;
@@ -94,28 +148,33 @@ body {
   color: #fff;
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
 }
-#article1 .rule .safe ul {
+#article2 .rule .safe ul {
   display: none;
   line-height: 1.5;
   color: #fff;
 }
-#article1 .rule .safe ul strong {
+#article2 .rule .safe ul strong {
   color: red;
   font-size: 20px;
   font-weight: 700;
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
 }
-#article1 .rule .safe img {
+#article2 .rule .safe img {
   display: none;
-  width: 32vw;
+  width: 35vw;
   height: 60vh;
   text-align: center;
 }
-#article1 .rule1 {
+@media screen and (max-width:1024px) {
+  #article2 .rule .safe img {
+    width: 90vw;
+  }
+}
+#article2 .rule1 {
   background: url(../images/rule13.png) no-repeat center top;
   background-size: cover;
 }
-#article1 .rule1 li {
+#article2 .rule1 li {
   font-size: 16px;
   padding: 15px 0;
   font-weight: 600;
@@ -123,67 +182,28 @@ body {
   letter-spacing: 3px;
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
 }
-#article1 .rule2 {
+#article2 .rule2 {
   background: url(../images/rule14.png) no-repeat center top;
   background-size: cover;
 }
-#article1 .rule2 li {
+#article2 .rule2 li {
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 3px;
   line-height: 2;
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
 }
-#article1 .rule3 {
+#article2 .rule3 {
   background: url(../images/rule15.png) no-repeat center top;
   background-size: cover;
 }
-#article1 .rule3 li {
+#article2 .rule3 li {
   font-size: 16px;
   padding: 6px 0;
   letter-spacing: 4px;
   font-weight: 600;
   line-height: 1.5;
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
-}
-
-.article2 {
-  opacity: 0;
-  transition: all 1s;
-  padding: 150px 0;
-  background: url(../images/camping14.png) no-repeat center top;
-  background-size: contain;
-  background-attachment: fixed;
-  font-family: "Staatliches", cursive;
-  margin-top: 300px;
-  color: #fff;
-  text-align: center;
-  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
-}
-.article2.on {
-  opacity: 1;
-}
-.article2 p {
-  font-size: 40px;
-  line-height: 2;
-  letter-spacing: 5px;
-  font-weight: 900;
-}
-@media screen and (max-width:1024px) {
-  .article2 p {
-    font-size: 25px;
-  }
-}
-.article2 h2 {
-  font-size: 30px;
-  line-height: 2;
-  letter-spacing: 10px;
-  font-weight: 900;
-}
-@media screen and (max-width:1024px) {
-  .article2 h2 {
-    font-size: 20px;
-  }
 }
 
 #article3 {
