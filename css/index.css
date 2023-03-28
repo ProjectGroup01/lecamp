@@ -63,13 +63,14 @@ article {
 
 .cont1 .inner_wrap .right video {
   width: 100%;
+  border-radius: 15px;
 }
 
 .cont1 .inner_wrap .ment1 {
   font-size: 30px;
   font-weight: 700;
   color: #334257;
-  border-bottom: 1px solid #767676;
+  border-bottom: 1px solid #fff;
   padding: 0 0 10px;
   height: auto;
   margin: 20px;
@@ -87,7 +88,7 @@ article {
 
 /* 컨텐츠구역 2 */
 .cont2 {
-  background: #ecf2ff;
+  background: #e4fbff;
   padding: 30px 0;
   display: flex;
   justify-content: center;
@@ -592,7 +593,6 @@ article {
 
 /* 컨텐츠구역 4 */
 .cont4 {
-  background: #ecf2ff;
   width: 100%;
   min-height: 100vh;
   position: relative;
