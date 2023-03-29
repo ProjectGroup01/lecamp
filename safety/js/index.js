@@ -58,7 +58,7 @@ $('.article4 .movie .img img').on('click', function(){
         width:'100%',
         height:'100%',
         paddingTop:'56.25%',
-        background:'rgba(0,0,0,0.7)'
+        background:'rgba(0,0,0,0.7)',
     })
 
    
@@ -93,10 +93,8 @@ $('.article4 .movie .img img').on('click', function(){
     //      })
     //  }
 
-
-
-    
     $('.imgbox button').css({
+        
         position:'absolute',
         top:'0',
         right:'0',
