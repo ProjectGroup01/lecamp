@@ -16,10 +16,6 @@ $(window).scroll( function(){
     $(".checklist").toggleClass("on");
   });
   
-  //  $(".checklist span").click(function (e) {
-  //    e.preventDefault();
-  //    $(this).toggleClass("on");
-  //  }); 
   let flag1 = []
   $('.group1 span').each(function(i){
     flag1[i] = true
@@ -71,7 +67,7 @@ $(window).scroll( function(){
   $("#btn2").on("click", function() {
     $(".cont3 .result").addClass("on");
   });
-  $(".cont2 .search-btn").on("click", function() {
+  $(".cont3 .search-btn").on("click", function() {
     $(".cont3 .search-btn").toggleClass("on");
   });
   
@@ -106,50 +102,36 @@ $(window).scroll( function(){
   (function($) {
   
     $( "#datepicker" ).datepicker({
-      // showAnim : 'slideDown',      // p태그
       showOtherMonths: true,          
       selectOtherMonths: true,
-      // changeMonth: true,
-      // changeYear: true,
-      // numberOfMonths: 3,
-      // showButtonPanel: true,
       dateFormat:'yy-mm-dd',
-      // minDate: -20, 
-      // maxDate: "+1M +10D",
-      yearSuffix: "년"        //달력의 년도 부분 뒤 텍스트
+      yearSuffix: "년"  
       ,monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 텍스트
       ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip
-      ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 텍스트
+      ,dayNamesMin: ['일','월','화','수','목','금','토'] 
       ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일']
-      ,showMonthAfterYear:true // 월- 년 순서가아닌 년도 - 월 순서
+      ,showMonthAfterYear:true 
     });
     
-    $('#datepicker').datepicker('setDate', 'today');    // input 상자에 오늘날짜 표시
+    $('#datepicker').datepicker('setDate', 'today');
   
   })(jQuery);
   
   (function($) {
   
     $( "#datepicker2" ).datepicker({
-      // showAnim : 'slideDown',      // p태그
       showOtherMonths: true,          
       selectOtherMonths: true,
-      // changeMonth: true,
-      // changeYear: true,
-      // numberOfMonths: 3,
-      // showButtonPanel: true,
       dateFormat:'yy-mm-dd',
-      // minDate: -20, 
-      // maxDate: "+1M +10D",
-      yearSuffix: "년"        //달력의 년도 부분 뒤 텍스트
+      yearSuffix: "년" 
       ,monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 텍스트
       ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip
-      ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 텍스트
+      ,dayNamesMin: ['일','월','화','수','목','금','토'] 
       ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일']
-      ,showMonthAfterYear:true // 월- 년 순서가아닌 년도 - 월 순서
+      ,showMonthAfterYear:true 
     });
     
-    $('#datepicker2').datepicker('setDate', 'today');    // input 상자에 오늘날짜 표시
+    $('#datepicker2').datepicker('setDate', 'today + 1');
   
   })(jQuery);
 
