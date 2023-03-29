@@ -44,7 +44,7 @@ $(window).scroll( function(){
   function checklist(idx, group, arr){
     if(arr[ idx ]){
       let ch = $(`.${group} span`).eq(idx).attr('data-check')
-      $( '.chlbottom' ).append(`<p class="chk" data-group="${group}" data-idx="${idx}">${ch}<span><i class="fa-solid fa-circle-xmark"></i></span></p>`)
+      $( '.chlbottom' ).append(`<p class="chk" data-type="${ch}" data-group="${group}" data-idx="${idx}">${ch}<span><i class="fa-solid fa-circle-xmark"></i></span></p>`)
       arr[ idx ] = false
       
     }
@@ -61,14 +61,20 @@ $(window).scroll( function(){
   });
   
   $("#btn1").on("click", function() {
-    $(".cont3 .result").removeClass("on");
+    $(".cont2 .result").removeClass("on");
     $(".chlbottom p").remove();
   });
   $("#btn2").on("click", function() {
-    $(".cont3 .result").addClass("on");
+    let type = $('.chlbottom p').attr("data-type")
+    $(".cont2 .result").addClass("on");
+    if(type = '산'){
+      $('.bottomWrap:first-child .resultContents').css("background", "url(../img/cont2_img1.png)")
+    } else if(type = '바다'){
+      
+    }
   });
-  $(".cont3 .search-btn").on("click", function() {
-    $(".cont3 .search-btn").toggleClass("on");
+  $(".cont2 .search-btn").on("click", function() {
+    $(".cont2 .search-btn").toggleClass("on");
   });
   
   $("#btn2").click(function() {
