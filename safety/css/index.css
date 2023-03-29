@@ -10,16 +10,21 @@ section {
 }
 
 body {
-  background: #e4fbff;
+  background: url(../images/background2.png) center top no-repeat;
+}
+@media screen and (max-width:1024px) {
+  body {
+    background-size: 100% 80%;
+  }
 }
 
 .article1 {
-  padding: 160px 0;
+  padding: 150px 0;
   background: url(../images/camping14.png) no-repeat center bottom;
   background-size: cover;
   background-attachment: fixed;
   font-family: "Staatliches", cursive;
-  margin-top: 200px;
+  margin-top: 250px;
   color: #fff;
   text-align: center;
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
@@ -98,7 +103,6 @@ body {
   background: rgb(0, 0, 0);
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
-  border: 1px solid rgba(0, 0, 0, 0.35);
 }
 #article2 .rule:hover .safe ul {
   display: block;
@@ -213,7 +217,7 @@ body {
 }
 
 #article3 {
-  background: #f0ebc5;
+  background: #f0eccc;
   border-radius: 100px;
   max-width: 1400px;
   margin: 100px auto;
@@ -222,8 +226,8 @@ body {
   box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
 }
 #article3 h1 {
-  font-size: 50px;
-  color: #334257;
+  font-size: 45px;
+  color: #000;
   font-weight: 900;
   animation: flash 3s infinite;
 }
@@ -298,7 +302,7 @@ body {
 #article3 .list li .box {
   height: auto;
   padding: 20px 0;
-  background: #fbdaff;
+  background: #fccd98;
   border-radius: 50px;
   box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
   transition: all 0.5s;
@@ -354,7 +358,7 @@ body {
   transition: all 1s;
   display: flex;
   padding: 50px;
-  background-color: rgb(253, 221, 58);
+  background-color: rgb(255, 230, 103);
   color: #fff;
   text-align: center;
   width: 98%;
@@ -441,7 +445,7 @@ body {
   overflow: hidden;
   transition: 0.5s;
   font-size: 90px;
-  color: #000;
+  color: #334257;
   font-family: "Rubik Vinyl", cursive;
 }
 .sub2-text .sub2-wrap {

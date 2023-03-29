@@ -10,16 +10,17 @@ $phone: "screen and (max-width:1024px)";
 
 section { font-family: 'Noto Sans KR', sans-serif;}
 
-body{background: #e4fbff;}
-// body{ background:url(../images/background1.jpg) no-repeat;}
+body{ background:url(../images/background2.png) center top no-repeat;
+    @media #{$phone}{ background-size: 100% 80%;}
+}
 
 .article1{
-    padding: 160px 0;
+    padding: 150px 0;
     background: url(../images/camping14.png) no-repeat center bottom;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Staatliches', cursive;
-    margin-top: 200px;
+    margin-top: 250px;
     color: #fff; text-align: center; 
     text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
       0px -4px 10px rgba(255,255,255,0.3);
@@ -59,7 +60,7 @@ body{background: #e4fbff;}
         // background: #fff;
         -webkit-backdrop-filter: blur(2px);
         backdrop-filter: blur(2px);
-        border: 1px solid rgba(0,0,0,0.35);
+        // border: 1px solid rgba(0,0,0,0.35);
      .safe{
         ul{ display:block; animation: fadeIn 2s; }
         img{ display:block; animation: fadeIn 2s; animation: zoomIn 2s alternate;}
@@ -154,14 +155,14 @@ body{background: #e4fbff;}
 
 
 #article3{
-    background: #f0ebc5;
+    background: #f0eccc;
     border-radius: 100px;
     max-width: 1400px;
     margin: 100px auto;
     padding: 50px 0;
     text-align: center;
     box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
-    h1{ font-size: 50px; color: #334257; font-weight: 900;
+    h1{ font-size: 45px; color: #000; font-weight: 900;
         animation: flash 3s infinite; 
         @media #{$phone}{ animation: none; font-size: 30px; margin: 0;} 
     }
@@ -194,7 +195,7 @@ body{background: #e4fbff;}
             @media #{$phone}{ flex:1 1 40%; margin: 5px 5px; animation: none;}
             
             .box{
-                height: auto; padding: 20px 0; background: #fbdaff;
+                height: auto; padding: 20px 0; background: #fccd98;
                 border-radius: 50px; box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
                 transition: all 0.5s;
                 &:hover{ background: rgb(233, 97, 79); color: #fff;}
@@ -222,7 +223,7 @@ body{background: #e4fbff;}
 #article4{
     opacity: 0; transition: all 1s;
     display: flex; padding: 50px;
-    background-color: rgb(253, 221, 58);
+    background-color: rgb(255, 230, 103);
     color: #fff;
     text-align: center;
     width: 98%;
@@ -261,7 +262,7 @@ body{background: #e4fbff;}
         overflow: hidden;
         transition: 0.5s;
         font-size: 90px;
-        color: #000;
+        color: #334257;
         font-family: "Rubik Vinyl", cursive;
 
         .sub2-wrap {
