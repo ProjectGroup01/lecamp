@@ -156,7 +156,7 @@ body{background: #e4fbff;}
 #article3{
     background: #f0ebc5;
     border-radius: 100px;
-    max-width: 1500px;
+    max-width: 1400px;
     margin: 100px auto;
     padding: 50px 0;
     text-align: center;
@@ -244,7 +244,7 @@ body{background: #e4fbff;}
     h2{ padding: 20px; color: #767676; font-size: 20px; font-weight: 600;
         @media #{$phone}{ font-size: 14px;}}
     strong{font-size: 25px;}
-    .img{  padding: 20px 0; cursor: pointer; display: flex;
+    .img{ padding: 20px 0; cursor: pointer; display: flex;
         @media #{$phone}{ display: block; width: 100%;  text-align: center;}
      p{ flex: 1; margin: 0 30px;
         @media #{$phone}{ padding: 10px 0;}
