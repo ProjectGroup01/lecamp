@@ -51,6 +51,7 @@ $('.article4 .movie .img img').on('click', function(){
     $('body').append(modal)
 
     $('.modal').css({
+        zIndex:'9999999',
         position:'fixed',
         top:0,
         left:0,
