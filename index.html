@@ -11,7 +11,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/rwdcommon.css" />
@@ -124,92 +126,25 @@
         </article>
         <!-- article1 -->
 
-        
-        
         <article class="cont2">
-          <div class="container">
-            <div class="cont2_inner01">
-              <div class="cont2_cont01">
-                <strong class="tit">2023<br />주목해야 할 <br />캠핑장소</strong>
-              </div>
-              <div class="cont2_img">
-                <span class="cont2_imgtxt">
-                  <a href="#">캠핑을 결심하기에 좋은 장소</a>
-                </span>
-                <span class="cont2_imgtxt">
-                  <a href="#">캠핑을 가장 캠핑답게 하는 방법</a>
-                </span>
-                <span class="cont2_imgtxt">
-                  <a href="#">따뜻한 봄을 위한 캠핑</a>
-                </span>
-              </div>
-            </div>
-
-            <div class="cont2_inner02">
-              <div class="cont2_cont02">
-                <ul class="cont2_list">
-                  <li>
-                    <div class="img">
-                      <img src="./img/cont3_img2.jpg" alt="" />
-                    </div>
-                    <div class="htl">
-                      <div class="name_group">
-                        <strong class="item_title"><a href="#">국내 캠핑여행</a></strong>
-                        <p class="item_text">
-                          호스트가 제공하는 장소 #차박 <br />
-                          #오토캠핑
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="img">
-                      <img src="./img/cont3_img3.jpg" alt="" />
-                    </div>
-                    <div class="htl">
-                      <div class="name_group">
-                        <strong class="item_title"><a href="#">스테이션 서비스</a></strong>
-                        <p class="item_text">캠핑에 필요한 모든 것 #청수 #주차장</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="img">
-                      <img src="./img/cont3_img4.jpg" alt="" />
-                    </div>
-                    <div class="htl">
-                      <div class="name_group">
-                        <strong class="item_title"><a href="#">캠핑장 정보</a></strong>
-                        <p class="item_text">장소의 한계를 넘어 가능한 모든 곳</p>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </article>
-        <!-- article2 -->
-
-        <article class="cont3">
           <div class="container">
             <div class="search">
               <ul class="searchUl">
                 <li>
                   체크인
                   <br />
-                  <span><input type="text" id="datepicker"></span>
+                  <span><input type="text" id="datepicker" /></span>
                 </li>
                 <li>
                   체크아웃
                   <br />
-                  <span><input type="text" id="datepicker2"></span>
+                  <span><input type="text" id="datepicker2" /></span>
                 </li>
                 <li class="people">
                   인원
-                <button v-on:click="countDown(1)">-</button>
-                <button v-on:click="countUp(1)">+</button>
-                <div id='result'>{{ count }}명</div>
+                  <button v-on:click="countDown(1)">-</button>
+                  <button v-on:click="countUp(1)">+</button>
+                  <div id="result">{{ count }}명</div>
                 </li>
               </ul>
               <button class="search-btn" type="submit">
@@ -275,54 +210,175 @@
                 <div id="btn2" class="btn">검색하기</div>
               </div>
               <!-- chlbutton -->
-              <div class="result">
-              </div>
+              <div class="result"></div>
               <!-- result -->
             </div>
             <!-- checklist -->
           </div>
         </article>
-        <!-- article3 -->
-       
-        <article class="cont4">
+        <!-- article2 -->
+
+        <article class="cont3">
           <div class="container">
-            <div class="cont4_list">
-              <div class="list01">
-                <span class="img01">
-                  <img src="./img/cont4_img1.jpg" alt="" />
+            <div class="cont3_inner01">
+              <div class="cont3_cont01">
+                <strong class="tit">2023<br />주목해야 할 캠핑장소</strong>
+              </div>
+              <div class="cont3_img">
+                <span class="cont3_imgtxt">
+                  <a href="#">캠핑을 결심하기에 좋은 장소</a>
+                </span>
+                <span class="cont3_imgtxt">
+                  <a href="#">캠핑을 가장 캠핑답게 하는 방법</a>
+                </span>
+                <span class="cont3_imgtxt">
+                  <a href="#">따뜻한 봄을 위한 캠핑</a>
                 </span>
               </div>
-              <div class="list02">
-                <p class="tag">국내 캠핑장 투어 📸</p>
-                <p class="item_title">머물고 싶어지게<br />만드는 캠핑장 여행</p>
-                <p class="item_text">
-                  #호수뷰 #프라이빗 #가족캠핑<br />
-                  #대둔산 #시냇가물놀이 #힐링<br />
-                  #모든 장소가 나의 캠핑장이 될 수 있다
-                </p>
-                <ul>
+              <div class="cont3_txt">
+                <p>Everything You need to Know About Camping</p>
+                <p>Camping is good for you!</p>
+              </div>
+            </div>
+
+            <div class="cont3_inner02">
+              <div class="cont3_cont02">
+                <ul class="cont3_list">
                   <li>
-                    <a href="#"></a>
-                      <span class="img02"><img src="./img/cont4_img2.jpg" alt="" /></span>
-                      <p class="item_title">즐겁고 편리한 캠핑라이프</p>
-                      <p class="item_text">#매력가득 소도시 #캠핑여행 최적의 동선</p>
-                    </a>
+                    <div class="img">
+                      <img src="./img/cont3_img2.jpg" alt="" />
+                    </div>
+                    <div class="htl">
+                      <div class="name_group">
+                        <strong class="item_title"><a href="#">국내 캠핑여행</a></strong>
+                        <p class="item_text">호스트가 제공하는 장소 <br />#차박 #오토캠핑</p>
+                      </div>
+                    </div>
                   </li>
                   <li>
-                    <a href="#"
-                      ><span class="img02"><img src="./img/cont4_img3.jpg" alt="" /></span>
-                      <p class="item_title">지속 가능한 캠핑의 가치를 추구</p>
-                      <p class="item_text">캠핑의 목적은 사람의 행복 </p>
-                    </a>
+                    <div class="img">
+                      <img src="./img/cont3_img3.jpg" alt="" />
+                    </div>
+                    <div class="htl">
+                      <div class="name_group">
+                        <strong class="item_title"><a href="#">스테이션 서비스</a></strong>
+                        <p class="item_text">캠핑에 필요한 모든 것 <br />#청수 #주차장</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="img">
+                      <img src="./img/cont3_img4.jpg" alt="" />
+                    </div>
+                    <div class="htl">
+                      <div class="name_group">
+                        <strong class="item_title"><a href="#">캠핑장 정보</a></strong>
+                        <p class="item_text">장소의 한계를 넘어 가능한 모든 곳</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="img">
+                      <img src="./img/cont3_img5.jpg" alt="" />
+                    </div>
+                    <div class="htl">
+                      <div class="name_group">
+                        <strong class="item_title"><a href="#">캠핑의 목적</a></strong>
+                        <p class="item_text">따뜻하고 아름다운 <br />캠핑 라이프</p>
+                      </div>
+                    </div>
                   </li>
                 </ul>
               </div>
-              
             </div>
           </div>
         </article>
-      </section>
-      <!-- article4 -->
+        <!-- article3 -->
+       
+         <article class="cont4">
+          <div class="container">
+            <div class="cont4_list">
+              <div class="tag"><p>국내 캠핑장 투어 📸</p></div>
+              <div class="list01">
+                <div class="img01">
+                  <img src="./img/cont4_img1.jpg" alt="" />
+                  <div class="item_text">
+                    <p>
+                      <i class="fa-solid fa-hashtag"> 호수뷰</i>&nbsp;&nbsp;<i class="fa-solid fa-hashtag"> 프라이빗</i>&nbsp;&nbsp;<i class="fa-solid fa-hashtag"> 가족캠핑</i><br />
+                      <i class="fa-solid fa-hashtag"> 대둔산</i>&nbsp;&nbsp;<i class="fa-solid fa-hashtag"> 시냇가물놀이</i>&nbsp;&nbsp; <i class="fa-solid fa-hashtag"> 힐링</i><br />
+                      <i class="fa-solid fa-hashtag"> 모든 장소가 나의 캠핑장이 될 수 있다</i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="list02">
+                <p class="item_title">머물고 싶어지게<br />만드는 캠핑장 여행</p>
+                <ul>
+                  <li>
+                    <div class="img02"><img src="./img/cont4_img2.jpg" alt="" /></div>
+                    <p class="item_title">즐겁고 편리한 캠핑라이프</p>
+                    <p class="item_txt">#매력가득 소도시 <br />#캠핑여행 최적의 동선</p>
+                  </li>
+                  <li>
+                    <div class="img02"><img src="./img/cont4_img3.jpg" alt="" /></div>
+                    <p class="item_title">지속 가능한 캠핑의 가치를 추구</p>
+                    <p class="item_txt">캠핑의 목적은 사람의 행복</p>
+                  </li>
+                  <li>
+                    <div class="img02"><img src="./img/cont4_img4.jpg" alt="" /></div>
+                    <p class="item_title">캠핑을 즐길 줄 아는 사람들</p>
+                    <p class="item_txt">#산속 캠핑 <br />#자연 속 힐링체험</p>
+                  </li>
+                  <li>
+                    <div class="img02"><img src="./img/cont4_img5.jpg" alt="" /></div>
+                    <p class="item_title">새로운 캠핑장 발굴</p>
+                    <p class="item_txt">#캠핑장 추천 <br />#최적의 캠핑장</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- article4 -->
+        
+        <article class="cont5">
+          <div class="container">
+            <div class="cont5_tit">
+              <p>The Physical Benefits of Camping</p>
+              <p>Camping brings freedom of shelter!</p>
+            </div>
+            <ul class="cont5_list">
+              <li class="cont5_item1">
+                <div class="cont5_img">
+                  <img src="./img/cont5_img1.jpg" alt="" />
+                </div>
+                <div class="cont5_txt1">
+                  <p>캠핑의 모든것</p>
+                  <div class="txt_box">
+                    <div class="tbox1">지속가능한 캠핑의 가치를 추구</div>
+                    <br />
+                    <div class="tbox2">캠핑의 목적은 사람의 행복</div>
+                  </div>
+                </div>
+              </li>
+              <li class="cont5_item2">
+                <div class="cont5_img">
+                  <img src="./img/cont5_img2.jpg" alt="" />
+                </div>
+                <div class="cont5_txt2">
+                  <p>캠핑의 가치</p>
+                  <div class="txt_box">
+                    <div class="tbox1">캠핑은 아름다운 여정</div>
+                    <br />
+                    <div class="tbox2">캠핑을 위한 주변 환경 만들기</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <!-- article5 -->
+        </section>
       <!-- section -->
 
       <footer id="footer">
