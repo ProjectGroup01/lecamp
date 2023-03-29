@@ -843,7 +843,7 @@ article {
 .cont5 .cont5_txt1 p {
   position: absolute;
   top: 25%;
-  left: 15%;
+  left: 14%;
   font-size: 35px;
   font-weight: 600;
   color: #fff;
@@ -853,7 +853,7 @@ article {
 .cont5 .cont5_txt1 .txt_box {
   position: absolute;
   bottom: 27%;
-  left: 15%;
+  left: 14%;
   font-size: 20px;
   color: #fff;
   z-index: 9;
@@ -882,7 +882,7 @@ article {
 .cont5 .cont5_txt2 p {
   position: absolute;
   top: 25%;
-  right: 35%;
+  right: 36%;
   font-size: 35px;
   font-weight: 600;
   color: #fff;
