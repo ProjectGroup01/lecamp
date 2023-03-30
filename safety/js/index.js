@@ -116,3 +116,49 @@ $('body').on('click', '.modal button, .modal', function(){
 
 
 
+var words = ['캠핑 떠날 준비는 다 하셨나요 ?', '출발 전 아래의 안전 수칙을 확인해 주세요 ! ', 'CHECK SAFETY RULES BEFORE GOING CAMPING!'],
+    part,
+    i = 0,
+    offset = 0,
+    len = words.length,
+    forwards = true,
+    skip_count = 0,
+    skip_delay = 10,
+    speed = 100;
+var wordflick = function () {
+  setInterval(function () {
+    if (forwards) {
+      if (offset >= words[i].length) {
+        ++skip_count;
+        if (skip_count == skip_delay) {
+          forwards = false;
+          skip_count = 0;
+        }
+      }
+    }
+    else {
+      if (offset == 0) {
+        forwards = true;
+        i++;
+        offset = 0;
+        if (i >= len) {
+          i = 0;
+        }
+      }
+    }
+    part = words[i].substr(0, offset);
+    if (skip_count == 0) {
+      if (forwards) {
+        offset++;
+      }
+      else {
+        offset--;
+      }
+    }
+    $('#container p').text(part);
+  },speed);
+};
+
+$(document).ready(function () {
+  wordflick();
+});

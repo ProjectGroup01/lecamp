@@ -1,56 +1,56 @@
 $phone: "screen and (max-width:1024px)"; 
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
 
 // @media #{$phone}{ }
 
 *{ margin: 0 auto;}
 
-section { font-family: 'Noto Sans KR', sans-serif;}
+section { font-family: 'Nanum Gothic', sans-serif;}
 
-body{ background:url(../images/background2.png) center top no-repeat;
-    @media #{$phone}{ background-size: 100% 80%;}
-}
+
 
 .article1{
-    padding: 150px 0;
-    // background: url(../images/camping14.png) no-repeat center bottom;
+    background:url(../images/background2.png) center top no-repeat;
+    height: 100vh;
+    padding: 120px 0;
     background-size: cover;
-    // background-attachment: fixed;
-    margin-top: 120px;
     color: #fff; text-align: center; 
     text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
       0px -4px 10px rgba(255,255,255,0.3);
       position:relative; 
-      .container{
-          animation: ani 2s both 0.5s;
-          margin: 10px 0; 
-          transform:translateY(-60%); opacity:0;
+      @media #{$phone}{ height: 70vh;}
+      #container {
+        margin: auto;
+        color: white;
+        font-weight: bold;
+        font-size: 70px;
+        line-height: 1.8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        @media #{$phone}{ font-size: 30px; margin: 0 30px;}
       }
       @keyframes ani {
           0% {  }
           100% {  transform:translateY(0); opacity:1 }
       }
-      @media #{$phone}{ padding: 100px 0; margin: 150px 0px;}  
-    &.on { opacity:1; }  
-    p{ font-size: 35px; line-height: 4; letter-spacing: 5px; font-weight: 900;
-        @media #{$phone}{ font-size: 25px;}}
-    h2{ font-size: 50px;  line-height: 2; letter-spacing: 10px; font-weight: 900;
-        font-family: 'Staatliches', cursive;
-        @media #{$phone}{ font-size: 20px; }}    
+      @media #{$phone}{ padding: 30px 0; }  
+    &.on { opacity:1; } 
+ 
+    h2{ font-size: 40px;  line-height: 2; letter-spacing: 10px; font-weight: 900;
+        @media #{$phone}{ font-size: 20px; }} 
 }
 
 
 #article2{
     opacity: 0; transition: all 1s;
     display: flex; text-align:center;
-    margin-top: 100px;
-    padding: 80px 0;
     color: #fff;
     &.on { opacity:1; }  
-    @media #{$phone}{ display: block; margin-top: 50px; opacity: 1;}
+    @media #{$phone}{ display: block;  opacity: 1;}
 
 .rule{
     position: relative;
@@ -65,11 +65,7 @@ body{ background:url(../images/background2.png) center top no-repeat;
     
     &:hover{flex: 1.5;
         cursor: pointer;
-        background: rgba(0,0,0,1);
-        // background: #fff;
-        -webkit-backdrop-filter: blur(2px);
-        backdrop-filter: blur(2px);
-        // border: 1px solid rgba(0,0,0,0.35);
+        background: rgba(0,0,0,0.1);
      .safe{
         ul{ display:block; animation: fadeIn 2s; }
         img{ display:block; animation: fadeIn 2s; animation: zoomIn 2s alternate;}
@@ -80,17 +76,6 @@ body{ background:url(../images/background2.png) center top no-repeat;
     }
 
 .safe{
-    // position:relative; 
-    // .intro{
-    //     animation: ani 3s both 0.5s infinite;
-    //     margin: 20px 0; 
-    //     transform:translateY(-50%); opacity:0;
-        
-    // }
-    // @keyframes ani {
-    //     0% {  }
-    //     100% {  transform:translateY(0); opacity:1 }
-    // }
     h1{
     font-weight: 900;
     font-size: 30px;
@@ -164,15 +149,13 @@ body{ background:url(../images/background2.png) center top no-repeat;
 
 
 #article3{
-    background: #f0eccc;
+    background: #ffffff;
     border-radius: 100px;
     max-width: 1400px;
     margin: 100px auto;
     padding: 50px 0;
     text-align: center;
-    box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
-    h1{ font-size: 45px; color: #000; font-weight: 900;
-        animation: flash 3s infinite; 
+    h1{ font-size:40px; color: #000; font-weight: 900;
         @media #{$phone}{ animation: none; font-size: 30px; margin: 0;} 
     }
 
@@ -204,10 +187,10 @@ body{ background:url(../images/background2.png) center top no-repeat;
             @media #{$phone}{ flex:1 1 40%; margin: 5px 5px; animation: none;}
             
             .box{
-                height: auto; padding: 20px 0; background: #fccd98;
+                height: auto; padding: 20px 0; background: #fff;
                 border-radius: 50px; box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
                 transition: all 0.5s;
-                &:hover{ background: rgb(233, 97, 79); color: #fff;}
+                &:hover{ background: rgb(255, 255, 255); box-shadow: 0 10px 40px #e91e63;  }
                 img{border-radius: 50%; padding: 20px 0; text-align: center; 
                     @media #{$phone}{ width: 100%; padding: 10px 0; }
                 }
@@ -230,26 +213,26 @@ body{ background:url(../images/background2.png) center top no-repeat;
 
 
 #article4{
-    opacity: 0; transition: all 1s;
+    opacity: 1; transition: all 1s;
     display: flex; padding: 50px;
-    background-color: rgb(255, 230, 103);
     color: #fff;
     text-align: center;
     width: 98%;
     margin-top: 50px;
     margin: 0 auto;
-    border: 2px solid #fff;
     border-radius: 20px;
     animation: slide-top 2s infinite; 
-    box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 20px, rgba(0, 0, 0, 0.22) 0px 0px 5px;
+    box-shadow: 0 20px 50px #65b3fcc9;
     &.on { opacity:1; } 
     @media #{$phone}{ opacity: 1; }
+    background: #fff;
 &:hover{
     animation: none;
 }    
     @media #{$phone}{ padding: 10px; animation: none;}
     .movie{ margin: 0 auto; }
     h1{ padding: 10px 0; font-size: 35px; font-weight: bold; color: #000;
+        i { color: red;} 
         @media #{$phone}{ font-size: 20px;}}
     h2{ padding: 20px; color: #767676; font-size: 20px; font-weight: 600;
         @media #{$phone}{ font-size: 14px;}}

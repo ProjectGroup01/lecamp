@@ -1,37 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
 * {
   margin: 0 auto;
 }
 
 section {
-  font-family: "Noto Sans KR", sans-serif;
-}
-
-body {
-  background: url(../images/background2.png) center top no-repeat;
-}
-@media screen and (max-width:1024px) {
-  body {
-    background-size: 100% 80%;
-  }
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 .article1 {
-  padding: 150px 0;
+  background: url(../images/background2.png) center top no-repeat;
+  height: 100vh;
+  padding: 120px 0;
   background-size: cover;
-  margin-top: 120px;
   color: #fff;
   text-align: center;
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
   position: relative;
 }
-.article1 .container {
-  animation: ani 2s both 0.5s;
-  margin: 10px 0;
-  transform: translateY(-60%);
-  opacity: 0;
+@media screen and (max-width:1024px) {
+  .article1 {
+    height: 70vh;
+  }
+}
+.article1 #container {
+  margin: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 1.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+@media screen and (max-width:1024px) {
+  .article1 #container {
+    font-size: 30px;
+    margin: 0 30px;
+  }
 }
 @keyframes ani {
   100% {
@@ -41,30 +48,17 @@ body {
 }
 @media screen and (max-width:1024px) {
   .article1 {
-    padding: 100px 0;
-    margin: 150px 0px;
+    padding: 30px 0;
   }
 }
 .article1.on {
   opacity: 1;
 }
-.article1 p {
-  font-size: 35px;
-  line-height: 4;
-  letter-spacing: 5px;
-  font-weight: 900;
-}
-@media screen and (max-width:1024px) {
-  .article1 p {
-    font-size: 25px;
-  }
-}
 .article1 h2 {
-  font-size: 50px;
+  font-size: 40px;
   line-height: 2;
   letter-spacing: 10px;
   font-weight: 900;
-  font-family: "Staatliches", cursive;
 }
 @media screen and (max-width:1024px) {
   .article1 h2 {
@@ -77,8 +71,6 @@ body {
   transition: all 1s;
   display: flex;
   text-align: center;
-  margin-top: 100px;
-  padding: 80px 0;
   color: #fff;
 }
 #article2.on {
@@ -87,7 +79,6 @@ body {
 @media screen and (max-width:1024px) {
   #article2 {
     display: block;
-    margin-top: 50px;
     opacity: 1;
   }
 }
@@ -111,9 +102,7 @@ body {
 #article2 .rule:hover {
   flex: 1.5;
   cursor: pointer;
-  background: rgb(0, 0, 0);
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.1);
 }
 #article2 .rule:hover .safe ul {
   display: block;
@@ -213,19 +202,17 @@ body {
 }
 
 #article3 {
-  background: #f0eccc;
+  background: #ffffff;
   border-radius: 100px;
   max-width: 1400px;
   margin: 100px auto;
   padding: 50px 0;
   text-align: center;
-  box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
 }
 #article3 h1 {
-  font-size: 45px;
+  font-size: 40px;
   color: #000;
   font-weight: 900;
-  animation: flash 3s infinite;
 }
 @media screen and (max-width:1024px) {
   #article3 h1 {
@@ -298,14 +285,14 @@ body {
 #article3 .list li .box {
   height: auto;
   padding: 20px 0;
-  background: #fccd98;
+  background: #fff;
   border-radius: 50px;
   box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
   transition: all 0.5s;
 }
 #article3 .list li .box:hover {
-  background: rgb(233, 97, 79);
-  color: #fff;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 10px 40px #e91e63;
 }
 #article3 .list li .box img {
   border-radius: 50%;
@@ -350,20 +337,19 @@ body {
 }
 
 #article4 {
-  opacity: 0;
+  opacity: 1;
   transition: all 1s;
   display: flex;
   padding: 50px;
-  background-color: rgb(255, 230, 103);
   color: #fff;
   text-align: center;
   width: 98%;
   margin-top: 50px;
   margin: 0 auto;
-  border: 2px solid #fff;
   border-radius: 20px;
   animation: slide-top 2s infinite;
-  box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 20px, rgba(0, 0, 0, 0.22) 0px 0px 5px;
+  box-shadow: 0 20px 50px rgba(101, 179, 252, 0.7882352941);
+  background: #fff;
 }
 #article4.on {
   opacity: 1;
@@ -390,6 +376,9 @@ body {
   font-size: 35px;
   font-weight: bold;
   color: #000;
+}
+#article4 h1 i {
+  color: red;
 }
 @media screen and (max-width:1024px) {
   #article4 h1 {
