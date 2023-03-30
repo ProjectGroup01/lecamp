@@ -162,7 +162,7 @@ section { font-family: 'Nanum Gothic', sans-serif;}
     .content1 {
         margin: 0 30px;
     }
-     strong{ line-height: 3; font-size: 20px; color:#e91e63; font-weight: 600;
+     strong{ line-height: 3; font-size: 20px; color:#e91e63; font-weight: bold;
         @media #{$phone}{ font-size: 18px; font-weight: bold;}}
 
     .list li:hover{
@@ -233,9 +233,9 @@ section { font-family: 'Nanum Gothic', sans-serif;}
     .movie{ margin: 0 auto; }
     h1{ padding: 10px 0; font-size: 35px; font-weight: bold; color: #000;
         i { color: red;} 
-        @media #{$phone}{ font-size: 20px;}}
-    h2{ padding: 20px; color: #767676; font-size: 20px; font-weight: 600;
-        @media #{$phone}{ font-size: 14px;}}
+        @media #{$phone}{ font-size: 30px;}}
+    h2{ padding: 20px; color: #767676; font-size: 20px; font-weight: bold;
+        @media #{$phone}{ font-size: 18px;}}
     strong{font-size: 25px;}
     .img{ padding: 20px 0; cursor: pointer; display: flex;
         @media #{$phone}{ display: block; width: 100%;  text-align: center;}
