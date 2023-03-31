@@ -18,7 +18,8 @@ body {
   background-repeat: no-repeat;
   text-indent: -999px;
   overflow: hidden;
-  margin: 100px auto;
+  margin: 50px auto;
+  margin-top: 200px;
   cursor: pointer;
 }
 
