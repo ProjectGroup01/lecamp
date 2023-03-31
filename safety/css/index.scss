@@ -65,7 +65,7 @@ section { font-family: 'Nanum Gothic', sans-serif;}
     
     &:hover{flex: 1.5;
         cursor: pointer;
-        background: rgba(0,0,0,0.1);
+        background: rgba(0,0,0,0.9);
      .safe{
         ul{ display:block; animation: fadeIn 2s; }
         img{ display:block; animation: fadeIn 2s; animation: zoomIn 2s alternate;}
@@ -187,7 +187,7 @@ section { font-family: 'Nanum Gothic', sans-serif;}
             @media #{$phone}{ flex:1 1 40%; margin: 5px 5px; animation: none;}
             
             .box{
-                height: auto; padding: 20px 0; background: #fff;
+                height: auto; padding: 20px 0; background: #F5EBEB;
                 border-radius: 50px; box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
                 transition: all 0.5s;
                 &:hover{ background: rgb(255, 255, 255); box-shadow: 0 10px 40px #e91e63;  }
@@ -225,7 +225,7 @@ section { font-family: 'Nanum Gothic', sans-serif;}
     box-shadow: 0 20px 50px #65b3fcc9;
     &.on { opacity:1; } 
     @media #{$phone}{ opacity: 1; }
-    background: #fff;
+    background: #DAF5FF;
 &:hover{
     animation: none;
 }    
@@ -233,7 +233,7 @@ section { font-family: 'Nanum Gothic', sans-serif;}
     .movie{ margin: 0 auto; }
     h1{ padding: 10px 0; font-size: 35px; font-weight: bold; color: #000;
         i { color: red;} 
-        @media #{$phone}{ font-size: 30px;}}
+        @media #{$phone}{ font-size: 25px;}}
     h2{ padding: 20px; color: #767676; font-size: 20px; font-weight: bold;
         @media #{$phone}{ font-size: 18px;}}
     strong{font-size: 25px;}

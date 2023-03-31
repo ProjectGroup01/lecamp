@@ -102,7 +102,7 @@ section {
 #article2 .rule:hover {
   flex: 1.5;
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.9);
 }
 #article2 .rule:hover .safe ul {
   display: block;
@@ -285,7 +285,7 @@ section {
 #article3 .list li .box {
   height: auto;
   padding: 20px 0;
-  background: #fff;
+  background: #F5EBEB;
   border-radius: 50px;
   box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
   transition: all 0.5s;
@@ -349,7 +349,7 @@ section {
   border-radius: 20px;
   animation: slide-top 2s infinite;
   box-shadow: 0 20px 50px rgba(101, 179, 252, 0.7882352941);
-  background: #fff;
+  background: #DAF5FF;
 }
 #article4.on {
   opacity: 1;
@@ -382,7 +382,7 @@ section {
 }
 @media screen and (max-width:1024px) {
   #article4 h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 #article4 h2 {
