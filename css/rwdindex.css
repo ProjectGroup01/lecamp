@@ -524,7 +524,7 @@
   .cont2 .container {
     position: relative;
     width: 95%;
-    height: 95px;
+    height: auto;
   }
 
   /* 컨텐츠구역 3 */
