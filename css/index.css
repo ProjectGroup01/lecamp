@@ -502,11 +502,11 @@ article {
 .cont3 .container {
   width: 1450px;
   margin: 180px auto;
+  display: flex;
 }
 
 .cont3 .cont3_inner01 {
-  float: left;
-  width: 434px;
+  width: 40%;
   height: 566px;
   background: url("../img/cont3_img1.jpg") no-repeat center center rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
@@ -559,15 +559,16 @@ article {
   line-height: 1.5;
   position: absolute;
   top: 20%;
-  left: 40%;
+  left: 44%;
   font-family: "Alkatra", cursive;
 }
 
 .cont3 .cont3_inner02 {
-  float: left;
+  display: flex;
   width: 1120px;
-  margin: 78px 0 0 -110px;
-  padding: 10px;
+  position: absolute;
+  top: 20%;
+  left: 30%;
 }
 
 .cont3 .cont3_inner02 .cont3_cont02 {
@@ -578,29 +579,25 @@ article {
   margin-top: 160px;
   overflow: hidden;
   padding: 10px;
+  display: flex;
 }
 
-.cont3 .cont3_inner02 .cont3_list > li {
+.cont3 .cont3_inner02 .cont3_list li {
   position: relative;
-  float: left;
   background-color: #fff;
   box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.2);
   height: 430px;
-  width: 245px;
+  width: 23%;
   margin: 40px 0 0 25px;
   transition: all 0.3s;
 }
 
-.cont3 .cont3_inner02 .cont3_list > li:hover {
+.cont3 .cont3_inner02 .cont3_list li:hover {
   box-shadow: 5px 5px 5px 5px rgba(159, 162, 177, 0.8);
 }
 
-.cont3 .cont3_inner02 .cont3_list li:first-child {
-  margin-left: 24px;
-}
-
 .cont3 .cont3_inner02 .cont3_list li .img {
-  width: 245px;
+  width: 100%;
   position: relative;
 }
 
@@ -779,7 +776,6 @@ article {
 
 /* 컨텐츠구역 5 */
 .cont5 {
-  /* background: #ecf2ff; */
   width: 100%;
   min-height: 100vh;
   position: relative;
