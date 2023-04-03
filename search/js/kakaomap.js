@@ -34,12 +34,15 @@ if (status === kakao.maps.services.Status.OK) {
  });
  
  var infowindow = new kakao.maps.InfoWindow({
-       content: `<div class="mapbox"><a href="${gourl}"><h3>${searc}<h3><p class="adr">주소 : ${adress}<p><p class="pnum">전화번호 : ${num}<p></a></div>`
+       content: `<div class="mapbox"><a href="${gourl}"><h3>${searc}<h3><p class="adr">주소 : ${adress}<p><p class="pnum">전화번호 : ${num}</p></a></div>`
  });
  infowindow.open(map, marker);
  map.setCenter(coords);
 } 
 });    
    });
+   setTimeout(function(){
+      $(".resultContents p:first").trigger('click');
+  }, 700);
    
  

@@ -11,7 +11,7 @@ jQuery(function($) {
   setTimeout (function () {
     scrollTo(0,0);
     },100);
-
+    $('#acc_gugun').val('서울특별시 강남구 캠핑장').prop("selected",true);
 $("#searchBtn").click(function() {
     $.ajax({
         method: "GET",
@@ -33,4 +33,10 @@ $("#searchBtn").click(function() {
         }
     });
 });
+$(".back").click(function() {
+    $("#sectionbox").css('opacity', '0')
+});
+setTimeout(function(){
+    $('#searchBtn').trigger('click');
+}, 100);
 });

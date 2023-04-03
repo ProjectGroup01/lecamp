@@ -34,6 +34,11 @@ body {
 .result::-webkit-scrollbar-track {
     background: rgba(33, 122, 244, .001);
 }
+.back {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
 #wrap {
     animation: bg-pan-bl 10s normal both;
     background:url(../img/bgg1.png);
@@ -52,6 +57,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     transition: all 0.4s;
+    z-index: 444;
 }
 #section {
     display: flex;
