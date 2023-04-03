@@ -32,4 +32,10 @@ $(function(){
         nextArrow:'<button class="slick-arrow slick-next"><i class="fa-solid fa-angles-right"></i></button>',
     
     })
+    $(".slideright").on("click", function() {
+        $(".detailwrap").addClass("on");
+      });
+      $(".detailwrap").on("click", function() {
+        $(".detailwrap").removeClass("on");
+      });
 });
