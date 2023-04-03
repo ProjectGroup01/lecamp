@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./css/rwdcommon.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/rwdindex.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
     <link rel="shortcut icon" href="./img/icon9.ico" />
     <link
       rel="stylesheet"
@@ -32,6 +33,7 @@
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="./js/slick.min.js"></script>
   </head>
   <body>
     <div id="wrap">
@@ -111,23 +113,48 @@
       <!-- m_menu -->
 
       <section id="section">
-        <article class="cont1">
-          <div class="container">
-            <div class="inner_wrap">
-              <div class="left">
-                <p class="ment1">여러분,<br />어떤 캠핑을 꿈꾸시나요?</p>
-                <p class="ment2">LECAMP 가 캠핑의 답이 되어드릴게요</p>
-                <div class="text-wave"></div>
+        <article class="article1">
+          <div class="slide-group">
+            <div class="slide slide1">
+              <div class="img"></div>
+              <div class="slide-text inner_wrap">
+                <div class="left">
+                  <p class="ment1">여러분,<br />어떤 캠핑을 꿈꾸시나요?</p>
+                  <p class="ment2">LECAMP 가 캠핑의 답이 되어드릴게요</p>
+                  <div class="text-wave"></div>
+                </div>
+                <div class="right">
+                  <video id="vid" muted autoplay loop>
+                    <source src="./img/camping.mp4" type="video/mp4" />
+                  </video>
+                </div>
               </div>
-              <div class="right">
-                <video id="vid" muted autoplay loop>
-                  <source src="./img/camping.mp4" type="video/mp4" />
-                </video>
+            </div>
+            <div class="slide slide2">
+              <div class="img"></div>
+              <div class="slide-text inner_wrap">
+                <h2>LECAMP Makes Your Camping Life Better</h2>
+                <p>
+                  장소와 시간으로부터 자유로운 여행과,<br />
+                  좋은 장소에서 잘 머무르는 캠핑의 가치를 추구합니다.
+                </p>
+              </div>
+            </div>
+            <div class="slide slide3">
+              <div class="img"></div>
+              <div class="slide-text inner_wrap">
+                <h2>
+                  Camping Mate,<br />
+                  LECAMP
+                </h2>
+                <p>
+                  프라이빗한 캠핑장을 추천합니다. <br />
+                  좋은 장소에서 따스한 봄기운을 느껴보세요!
+                </p>
               </div>
             </div>
           </div>
         </article>
-        <!-- article1 -->
 
         <article class="cont2">
           <div class="container">
@@ -225,8 +252,7 @@
           <div class="container">
             <div class="cont3_inner1">
               <div class="cont3_cont1">
-                <strong class="tit"
-                  >2023</strong>
+                <strong class="tit">2023</strong>
                 <p>주목해야 할 캠핑장소</p>
               </div>
               <div class="cont3_inner">
@@ -278,7 +304,7 @@
                     <div class="htl">
                       <div class="name_group">
                         <strong class="item_title"><a href="#">캠핑장 정보</a></strong>
-                        <p class="item_text">장소의 한계를 넘어 가능한<br>모든 곳</p>
+                        <p class="item_text">장소의 한계를 넘어 가능한<br />모든 곳</p>
                       </div>
                     </div>
                   </li>
