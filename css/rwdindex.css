@@ -209,8 +209,7 @@
   .cont3 .cont3_inner1 {
     width: 40%;
     height: 600px;
-    background: url("../img/cont3_img1.jpg") no-repeat 70% 30%
-      rgba(0, 0, 0, 0.3);
+    background: url("../img/cont3_img1.jpg") no-repeat 70% 30% rgba(0, 0, 0, 0.3);
     background-blend-mode: multiply;
     background-size: cover;
     border-radius: 15px;
@@ -441,6 +440,22 @@
 
 @media screen and (max-width: 514px) {
   /* 컨텐츠구역 3 */
+  .cont3 .cont3_inner2 .cont3_list {
+    display: flex;
+    margin: 0 -78px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .cont3 .cont3_inner2 .cont3_list li {
+    background-color: #fff;
+    box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.2);
+    height: 368px;
+    width: 48%;
+    margin: 40px 0 0 0px;
+    transition: all 0.3s;
+  }
+
   .cont3_inner2 .cont3_list .htl .name_group .item_title {
     color: #333;
     font-size: 18px;
