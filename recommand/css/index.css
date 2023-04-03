@@ -14,9 +14,9 @@ a{text-decoration:none;}
 /*section*/
 
 section{width:100%;height:1300px;position:relative;} 
-.page1{background: url(../img/bg3.jpg) no-repeat center fixed;background-size:cover;}
+.page1{background: url(../img/bg1.jpg) no-repeat center fixed;background-size:cover;}
 .page2{background: url(../img/bg3.jpg) no-repeat center fixed;background-size:cover;}
-.page3{background: url(../img/bg3.jpg) no-repeat center fixed;background-size:cover;}
+.page3{background: url(../img/bg2.png) no-repeat center fixed;background-size:cover;}
 
 
 
@@ -47,6 +47,23 @@ section{width:100%;height:1300px;position:relative;}
     position: absolute;
     right: 200px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sec2 .slide .slideright p {
+    font-size: 20px;
+    color: skyblue;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.8);
+    padding: 50px;
+    line-height: 2em;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+#sec2 .slide .slideright p:hover {
+    transform: scale(1.1);
 }
 
 #sec2 .slide  .slide-text{ 
@@ -352,7 +369,6 @@ section{width:100%;height:1300px;position:relative;}
       opacity: 0;
     }
   }
-
 
  /*  page3 부분  */
  .page3{
