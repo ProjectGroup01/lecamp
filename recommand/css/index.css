@@ -1,4 +1,5 @@
 @charset "uft-8";
+/* @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap'); */
 
 /* base */
 body,ul,li,p,h1,h2,h3,h4,h5,h6,video,dl,dt,dd{margin:0;padding:0;}
@@ -6,7 +7,9 @@ body{font:normal 12px "맑은 고딕";}
 img{vertical-align:top;border:0;}
 ul{list-style:none;}
 a{text-decoration:none;}  
- 
+
+/* section { font-family: 'Nanum Gothic', sans-serif;}  */
+
 #wrap{width:100%;overflow: hidden;position: relative;}
 
 
@@ -14,9 +17,9 @@ a{text-decoration:none;}
 /*section*/
 
 section{width:100%;height:1300px;position:relative;} 
-.page1{background: url(../img/bg1.jpg) no-repeat center fixed;background-size:cover;}
+.page1{background: url(../img/bg3.jpg) no-repeat center fixed;background-size:cover;}
 .page2{background: url(../img/bg3.jpg) no-repeat center fixed;background-size:cover;}
-.page3{background: url(../img/bg2.png) no-repeat center fixed;background-size:cover;}
+.page3{background: url(../img/bg3.jpg) no-repeat center fixed;background-size:cover;}
 
 
 
@@ -47,23 +50,6 @@ section{width:100%;height:1300px;position:relative;}
     position: absolute;
     right: 200px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#sec2 .slide .slideright p {
-    font-size: 20px;
-    color: skyblue;
-    text-align: center;
-    font-weight: bold;
-    border-radius: 20px;
-    background: rgba(255,255,255,0.8);
-    padding: 50px;
-    line-height: 2em;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-#sec2 .slide .slideright p:hover {
-    transform: scale(1.1);
 }
 
 #sec2 .slide  .slide-text{ 
@@ -370,6 +356,7 @@ section{width:100%;height:1300px;position:relative;}
     }
   }
 
+
  /*  page3 부분  */
  .page3{
     display: flex;
@@ -382,6 +369,29 @@ section{width:100%;height:1300px;position:relative;}
     position: absolute;
     bottom: 20px;
 }
+
+.page3 .banner .info h1{
+    margin-top: 200px;
+    text-align: center;
+    font-weight: 900;
+    color: #fff;
+    font-size: 50px;
+    line-height: 2;
+    letter-spacing: 3px;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+}
+
+.page3 .banner .info p{
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
 
 .page3 .banner img{
     transition: all 0.5s;
