@@ -35,7 +35,7 @@ $(function(){
     $(".slideright").on("click", function() {
         $(".detailwrap").addClass("on");
       });
-      $(".detailwrap").on("click", function() {
+      $(".detailwrap i").on("click", function() {
         $(".detailwrap").removeClass("on");
       });
 });
