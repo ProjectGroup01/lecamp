@@ -13,35 +13,47 @@ article {
 }
 
 /* 컨텐츠구역 1 */
-.cont1 {
-  width: 100%;
+#section .article1 {
   position: relative;
-  top: 0;
-  left: 50%;
-  /* min-height: 80vh; */
-  transform: translateX(-50%);
-  box-sizing: border-box;
-  background: url(../img/sky.jpg) center bottom;
-  background-repeat: no-repeat;
+}
+#section .slide {
+  position: relative;
+}
+#section .slide .img {
+  height: 50vw;
+  background-size: cover;
+  background-position: center;
+}
+#section .slide1 .img {
+  background-image: url(../img/slide1.jpg);
+}
+#section .slide2 .img {
+  background-image: url(../img/slide2.jpg);
+}
+#section .slide3 .img {
+  background-image: url(../img/slide3.jpg);
+  background-position: center bottom;
 }
 
-.cont1 .container {
-  margin: 200px auto 100px;
-}
-
-.cont1 .inner_wrap {
+.slide .slide-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  width: 100%;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.cont1 .inner_wrap .left {
-  width: 40%;
-  padding-right: 100px;
+.slide1 .inner_wrap .left {
+  width: 30%;
+  padding-right: 30px;
   position: relative;
 }
 
-.cont1 .inner_wrap .left .text-wave {
+.slide1 .inner_wrap .left .text-wave {
   width: 82px;
   height: 60px;
   background: url(../img/caravan.png) no-repeat right;
@@ -60,16 +72,16 @@ article {
   }
 }
 
-.cont1 .inner_wrap .right {
+.slide1 .inner_wrap .right {
   width: 50%;
 }
 
-.cont1 .inner_wrap .right video {
+.slide1 .inner_wrap .right video {
   width: 100%;
   border-radius: 15px;
 }
 
-.cont1 .inner_wrap .ment1 {
+.slide1 .inner_wrap .ment1 {
   font-size: 30px;
   font-weight: 700;
   color: #334257;
@@ -80,13 +92,112 @@ article {
   line-height: 60px;
 }
 
-.cont1 .inner_wrap .ment2 {
+.slide1 .inner_wrap .ment2 {
   font-size: 20px;
   font-weight: 600;
   line-height: 40px;
   color: #334257;
   margin: 20px;
   padding: 0 0 10px;
+}
+
+.article1 .slick-arrow {
+  position: absolute;
+  font-size: 70px;
+  color: #fff;
+  border: none;
+}
+
+.article1 .slick-prev {
+  left: 50px;
+  z-index: 9999;
+}
+
+.article1 .slick-next {
+  right: 50px;
+}
+
+.article1 .slick-dots {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.article1 .slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+  width: 94px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.5);
+  position: relative;
+}
+
+.article1 .slick-dots li button {
+  border: none;
+  width: 0px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.article1 .slick-dots li.slick-active button {
+  animation: btnani 3s both;
+}
+
+@keyframes btnani {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 94px;
+  }
+}
+
+.slide2 h2 {
+  font-size: 62px;
+  font-weight: 900;
+  color: #fff;
+  transform: translateY(-100%);
+  opacity: 1;
+  transition: all 0.5s 0.6s;
+}
+
+.slide2 p {
+  position: absolute;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.5;
+  transform: translateY(100%);
+  opacity: 1;
+  transition: all 0.5s 0.6s;
+}
+
+.slide3 h2 {
+  position: absolute;
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 1.5;
+  color: #fff;
+  top: 40%;
+  transform: translateY(-100%);
+  opacity: 1;
+  transition: all 0.5s 0.6s;
+}
+
+.slide3 p {
+  position: absolute;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.5;
+  top: 35%;
+  transform: translateY(50%);
+  opacity: 1;
+  transition: all 0.5s 0.6s;
 }
 
 /* 컨텐츠구역 2 */
@@ -788,10 +899,16 @@ article {
   width: 25%;
   height: 700px;
   background-color: #eec553;
+  opacity: 0;
   position: absolute;
   top: 19.7%;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
+  transition: all 0.5s ease-in-out;
+}
+
+.cont5_list .cont5_item1:hover:after {
+  opacity: 1;
 }
 
 .cont5_item1 .cont5_txt1 {
@@ -865,8 +982,14 @@ article {
   width: 25%;
   height: 700px;
   background-color: #1590dc;
+  opacity: 0;
   position: absolute;
   top: 19.7%;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
+  transition: all 0.5s ease-in-out;
+}
+
+.cont5_list .cont5_item2:hover:after {
+  opacity: 1;
 }
