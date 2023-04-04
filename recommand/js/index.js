@@ -31,7 +31,7 @@ const elts = {
 
 const texts = [
   "추억을 담고 싶은 곳이 안 떠오르시나요?",
-  "아래의 추천 캠핑장을 확인해보세요!"
+  "저희가 추천해드릴께요 ! "
 ];
 
 const morphTime = 1;
@@ -175,4 +175,6 @@ animate();
     $(this).toggleClass("active");
     $(".m_menu").toggleClass("visible");
   });
+
+  
 });
