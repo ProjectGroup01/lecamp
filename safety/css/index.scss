@@ -222,7 +222,6 @@ section { font-family: 'Nanum Gothic', sans-serif;}
     margin: 0 auto;
     border-radius: 20px;
     animation: slide-top 2s infinite; 
-    box-shadow: 0 20px 50px #65b3fcc9;
     &.on { opacity:1; } 
     @media #{$phone}{ opacity: 1; }
     background: #DAF5FF;
