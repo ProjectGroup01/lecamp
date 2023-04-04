@@ -38,4 +38,30 @@ $(function(){
       $(".detailwrap i").on("click", function() {
         $(".detailwrap").removeClass("on");
       });
+       // 헤더 scroll
+  $(window).scroll(function () {
+    var num = $(this).scrollTop();
+    if (num > 10) {
+      $("#header").addClass("on");
+      $("#header").css('display', 'none');
+    } else {
+      $("#header").removeClass("on");
+      $("#header").css('display', 'block');
+    }
+  });
+
+  // 햄버거버튼에 호버했을때 헤더 열림
+  $(".hamburger-button").mouseenter(function () {
+    $(this).siblings('#header').addClass('on')
+  });
+
+  $(".hamburger-button").mouseleave(function () {
+    $(this).siblings('#header').removeClass('on')
+  });
+  // 햄버거버튼 열기 닫기
+  $(".hamburger-button").click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass("active");
+    $(".m_menu").toggleClass("visible");
+  });
 });
