@@ -35,7 +35,7 @@ const texts = [
 ];
 
 const morphTime = 1;
-const cooldownTime = 0.25;
+const cooldownTime = 0.5;
 
 let textIndex = texts.length - 1;
 let time = new Date();
@@ -75,10 +75,10 @@ function doCooldown() {
   morph = 0;
 
   elts.text2.style.filter = "";
-  elts.text2.style.opacity = "100%";
+  elts.text2.style.opacity = "1";
 
   elts.text1.style.filter = "";
-  elts.text1.style.opacity = "0%";
+  elts.text1.style.opacity = "0";
 }
 
 function animate() {
@@ -177,4 +177,24 @@ animate();
   });
 
   
+  // 인트로 애니메이션 관련 
+
+setTimeout(function(){
+
+  let count = 0;
+  let timer = setInterval(add, 60)
+  function add() {
+      count++
+      if (count>=100) { 
+          clearInterval(timer) 
+          // $(".introAni").on("click", ".wrap", function () {
+  $('.introAni').fadeOut(
+   600, function(){
+      $(this).remove()
+  })
+// });
+      }
+  }
+  
+}, 10)
 });
