@@ -182,7 +182,7 @@ animate();
 setTimeout(function(){
 
   let count = 0;
-  let timer = setInterval(add, 60)
+  let timer = setInterval(add, 46)
   function add() {
       count++
       if (count>=100) { 
